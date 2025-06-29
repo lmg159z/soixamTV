@@ -1,0 +1,56 @@
+[
+  {
+    "id": "vov1",
+    "name": "VOV1",
+    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov1_2.png",
+    "style": ""
+  },
+  {
+    "id": "vov2",
+    "name": "VOV2",
+    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov2_2.png",
+    "style": ""
+  },
+  {
+    "id": "vov3",
+    "name": "VOV3",
+    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov3_2.png",
+    "style": ""
+  },
+  {
+    "id": "vov4",
+    "name": "VOV4 Dân tộc",
+    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov4_2.png",
+    "style": ""
+  },
+  {
+    "id": "vov5",
+    "name": "VOV5",
+    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov5new_0.png",
+    "style": ""
+  },
+  {
+    "id": "vov6",
+    "name": "VOV6",
+    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov6_2.png",
+    "style": ""
+  },
+  {
+    "id": "vovgthn",
+    "name": "VOV Giao thông Hà Nội",
+    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov-gt.png",
+    "style": ""
+  },
+  {
+    "id": "vovgthcm",
+    "name": "VOV Giao thông TP HCM",
+    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov-gt.png",
+    "style": "https://play.vovgiaothong.vn/live/gthcm/playlist.m3u8"
+  },
+  {
+    "id": "vovE247",
+    "name": "VOV English 24/7",
+    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov-en.png",
+    "style": ""
+  }
+]

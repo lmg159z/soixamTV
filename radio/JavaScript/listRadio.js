@@ -1,6 +1,6 @@
 
 function start() {
-  fetch(`${GL_domain}json/listChannelTV.json`)
+  fetch(`${GL_domain}json/radio/listChannelRadio.json`)
   .then(response => {
     if (!response.ok) {
       throw new Error(`Lỗi HTTP: ${response.status}`);
@@ -26,7 +26,7 @@ async function loop(list) {
 }
 
 function getChannel(name, logo, stream) {
-  return fetch(`${GL_domain}json/logo/${logo}.json`)
+  return fetch(`${GL_domain}json/radio/logo/${logo}.json`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Lỗi HTTP: ${response.status}`);
@@ -44,7 +44,7 @@ function getChannel(name, logo, stream) {
 function innerChannel(data, name, logo, stream) {
   const channel = document.getElementById("video-list");
   const listChannel = data.map(c => `
-    <a href="${GL_domain}tivi/index.html?groupChannel=${stream}&groupLogo=${logo}&channel=${c.id}">
+    <a href="${GL_domain}radio/stream/index.html?groupChannel=${stream}&groupLogo=${logo}&channel=${c.id}">
       <div class="video-item">
         <div class="thumbnail-container">
           <img src="${(c.logo.includes('http') ? c.logo : `${GL_domain}wordspage/image/logo/${c.logo}`)}" alt="${c.name}">
@@ -63,3 +63,6 @@ function innerChannel(data, name, logo, stream) {
     </div>
   `;
 }
+
+
+

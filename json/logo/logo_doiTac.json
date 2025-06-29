@@ -11,5 +11,17 @@
     "name": "Hoangducanh - Live 1",
     "logo": "https://iptv.hoangducanh.site/logo.png",
     "nation": "Vietnam"
+  },
+  {
+    "id": "kubolive",
+    "name": "Kubo Network",
+    "logo": "https://iptv.khanggtivi.xyz/image/kubolive-full.png",
+    "nation": "Vietnam"
+  },
+  {
+    "id": "kubocast",
+    "name": "KuboCast",
+    "logo": "https://iptv.khanggtivi.xyz/image/kubocast.png?reload=1",
+    "nation": "Vietnam"
   }
 ]

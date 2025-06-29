@@ -1,0 +1,57 @@
+{
+  "vov1": {
+    "name": "VOV1",
+    "streamLink": "https://stream-cdn.vov.vn/live/vov1-audio_only.m3u8",
+    "poster": "https://media.vov.vn/sites/default/files/2020-12/vov1_2.png",
+    "style": "radio"
+  },
+  "vov2": {
+    "name": "VOV2",
+    "streamLink": "https://stream-cdn.vov.vn/live/vov2-audio_only.m3u8",
+    "poster": "https://media.vov.vn/sites/default/files/2020-12/vov2_2.png",
+    "style": "radio"
+  },
+  "vov3": {
+    "name": "VOV3",
+    "streamLink": "https://stream-cdn.vov.vn/live/vov3-audio_only.m3u8",
+    "poster": "https://media.vov.vn/sites/default/files/2020-12/vov3_2.png",
+    "style": "radio"
+  },
+  "vov4": {
+    "name": "VOV4 Dân Tộc",
+    "streamLink": "https://stream-cdn.vov.vn/live/vov4-audio_only.m3u8",
+    "poster": "https://media.vov.vn/sites/default/files/2020-12/vov4_2.png",
+    "style": "radio"
+  },
+  "vov5": {
+    "name": "VOV5",
+    "streamLink": "https://stream-cdn.vov.vn/live/vov5-audio_only.m3u8",
+    "poster": "https://media.vov.vn/sites/default/files/2020-12/vov5new_0.png",
+    "style": "radio"
+  },
+  "vov6": {
+    "name": "VOV6",
+    "streamLink": "https://stream-cdn.vov.vn/live/vov6-audio_only.m3u8",
+    "poster": "https://media.vov.vn/sites/default/files/2020-12/vov6_2.png",
+    "style": "radio"
+  },
+  "vovgthn": {
+    "name": "VOV Giao thông Hà Nội",
+    "streamLink": "https://stream-cdn.vov.vn/live/giao_thong_ha_noi-audio_only.m3u8",
+    "poster":"https://media.vov.vn/sites/default/files/2020-12/vov-gt.png",
+    "style": "radio"
+  },
+  "vovgthcm": {
+    "name": "VOV Giao thông TP HCM",
+    "streamLink": "https://stream.vovmedia.vn/vovgt-hcm",
+    "poster":"https://media.vov.vn/sites/default/files/2020-12/vov-gt.png",
+    "style": "radio"
+  },
+  "vovE247": {
+    "name": "VOVGT English 24/7",
+    "streamLink": "https://stream-cdn.vov.vn/live/vov24_7-audio_only.m3u8",
+    "poster": "https://media.vov.vn/sites/default/files/2020-12/vov-en.png",
+    "style": "radio"
+  }
+}
+
