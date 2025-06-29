@@ -1,12 +1,11 @@
-#myVideo {
-  width: 90%;
-  border-radius: 5px;
-  border:1px solid #fff;
-  margin: 0 5%;
-  background-color: #111331;
-  animation: borderColorAnimation 2s linear infinite;
-}
+
+/*#myVideo , .video-section{
+  all:unset;
+  display:block;
+  width: 10px;
+}*/
 
 #video-list {
-  /*margin-top:calc((100vw * 9 / 16) + 40px);*/
+  margin-top:150px;
+
 }
