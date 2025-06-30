@@ -1,4 +1,3 @@
-
 function start(logoJ, main) {
   fetch(`${GL_domain}json/radio/logo/${logoJ}.json`)
   .then(response => {
@@ -17,8 +16,8 @@ function start(logoJ, main) {
 
 }
 
-  
 const channel = document.getElementById("video-list")
+
 function logo(logoChannel, main ) {
   const squaredNumbers = logoChannel.map(num => 
     `
@@ -29,20 +28,12 @@ function logo(logoChannel, main ) {
             </div>
             <div class="video-title">${num.name}</div>
         </div>
-        
-     
-     
-     
-     
     `
     );
   //console.log(squaredNumbers.join(""))
   channel.innerHTML = squaredNumbers.join("")
 }
  
-
-
-
 function updateURL(id) {
   const params = new URLSearchParams(window.location.search);
   params.set('channel', id);
@@ -50,12 +41,6 @@ function updateURL(id) {
   const newUrl = `${window.location.pathname}?${params.toString()}`;
   history.pushState(null, '', newUrl);
 }
-
-
-
-
-
-
 
 function play(idStream, tag) {
   fetch(`${GL_domain}json/radio/streamLink/${tag}.json`)
@@ -77,21 +62,37 @@ function play(idStream, tag) {
     });
   
 }
+
 function playRadio(streamUrl) {
   console.log(streamUrl)
   const audio = document.getElementById('myVideo');
-  
+  const streamLink = checkRadioUrl(streamUrl)
   if (!audio) {
     console.error("Không tìm thấy thẻ audio với id 'myAudio'");
     return;
   }
   
   audio.pause(); // Dừng nếu đang phát
-  audio.src = streamUrl; // Gán link mới
+  audio.src = streamLink; // Gán link mới
   audio.load(); // Tải lại
   audio.play().then(() => {
-    console.log("🎵 Đang phát:", streamUrl);
   }).catch(error => {
     console.error("🚫 Không thể phát:", error);
   });
+}
+
+function checkRadioUrl(url) {
+  var fallback = 'https://files.catbox.moe/onhht8.mp3';
+  var xhr = new XMLHttpRequest();
+  xhr.open('HEAD', url, false); // false = đồng bộ (⚠️ KHÔNG KHUYÊN DÙNG)
+  try {
+    xhr.send();
+    if (xhr.status >= 200 && xhr.status < 400) {
+      return url;
+    } else {
+      return fallback;
+    }
+  } catch (e) {
+    return fallback;
+  }
 }
