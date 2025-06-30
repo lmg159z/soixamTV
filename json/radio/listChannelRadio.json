@@ -1,7 +1,22 @@
 [
 {
-  "name":"Địa Phương",
+  "name":"VOV Đài Tiếng Nói Việt Nam",
   "logo":"vov",
   "stream":"vov"
+},
+{
+  "name":"VOV Đài Tiếng Nói Nhân Dân TP.Hồ Chí Minh",
+  "logo":"voh",
+  "stream":"voh"
+},
+{
+  "name": "Zeno",
+  "logo": "zeno",
+  "stream": "zeno"
+},
+{
+  "name": "Địa phương",
+  "logo": "diaPhuong",
+  "stream": "diaPhuong"
 }
 ]

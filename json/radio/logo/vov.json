@@ -2,19 +2,19 @@
   {
     "id": "vov1",
     "name": "VOV1",
-    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov1_2.png",
+    "logo": "https://foxxradio.com/upload/vi/1671787010.png.webp",
     "style": ""
   },
   {
     "id": "vov2",
     "name": "VOV2",
-    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov2_2.png",
+    "logo": "https://foxxradio.com/upload/vi/1671787175.png.webp",
     "style": ""
   },
   {
     "id": "vov3",
     "name": "VOV3",
-    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov3_2.png",
+    "logo": "https://foxxradio.com/upload/vi/1671787383.png.webp",
     "style": ""
   },
   {
@@ -24,9 +24,51 @@
     "style": ""
   },
   {
-    "id": "vov5",
-    "name": "VOV5",
+    "id": "vovMT",
+    "name": "VOV4 Miền Trungc",
+    "logo": "https://foxxradio.com/upload/vi/1671788868.png.webp",
+    "style": ""
+  },
+  {
+    "id": "vov4TB",
+    "name": "VOV4 Tây Bắc",
+    "logo": "https://foxxradio.com/upload/vi/1671788849.png.webp",
+    "style": ""
+  },
+  {
+    "id": "vov4DB",
+    "name": "VOV4 Đông Bắc",
+    "logo": "https://foxxradio.com/upload/vi/1671789125.png.webp",
+    "style": ""
+  },
+  {
+    "id": "vov4TN",
+    "name": "VOV4 Dân tộc",
+    "logo": "https://foxxradio.com/upload/vi/1671789171.png.webp",
+    "style": ""
+  },
+  {
+    "id": "vovDBSCL",
+    "name": "VOV4 Đồng Bằng Sông Cửu Long",
+    "logo": "https://foxxradio.com/upload/vi/1671789228.png.webp",
+    "style": ""
+  },
+  {
+    "id": "vov4TPHCM",
+    "name": "VOV4 TP. Hồ Chí Minh",
+    "logo": "https://foxxradio.com/upload/vi/1671789275.png.webp",
+    "style": ""
+  },
+  {
+    "id": "vov5W",
+    "name": "VOV5 World",
     "logo": "https://media.vov.vn/sites/default/files/2020-12/vov5new_0.png",
+    "style": ""
+  },
+  {
+    "id": "vov5E247",
+    "name": "VOV5 English 24/7",
+    "logo": "https://foxxradio.com/upload/vi/1671788129.png.webp",
     "style": ""
   },
   {
@@ -38,19 +80,37 @@
   {
     "id": "vovgthn",
     "name": "VOV Giao thông Hà Nội",
-    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov-gt.png",
+    "logo": "https://foxxradio.com/upload/vi/1671787624.png.webp",
     "style": ""
   },
   {
     "id": "vovgthcm",
     "name": "VOV Giao thông TP HCM",
-    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov-gt.png",
-    "style": "https://play.vovgiaothong.vn/live/gthcm/playlist.m3u8"
+    "logo": "https://foxxradio.com/upload/vi/1671787823.png.webp",
+    "style": ""
   },
   {
-    "id": "vovE247",
-    "name": "VOV English 24/7",
-    "logo": "https://media.vov.vn/sites/default/files/2020-12/vov-en.png",
+    "id": "vovgtmk",
+    "name": "VOV Giao thông Mekong",
+    "logo": "https://foxxradio.com/upload/vi/1671788606.png.webp",
+    "style": ""
+  },
+  {
+    "id": "vovgtDH",
+    "name": "VOV Giao thông Duyên Hải",
+    "logo": "https://foxxradio.com/upload/vi/vov-giao-thong-duyen-hai-vi.png.webp",
+    "style": ""
+  },
+  {
+    "id": "vovgFM90",
+    "name": "VOV Giao thông Đô Thị",
+    "logo": "https://foxxradio.com/upload/vi/1617337075.jpg.webp",
+    "style": ""
+  },  
+  {
+    "id": "vovFM89",
+    "name": "VOV FM89",
+    "logo": "https://foxxradio.com/upload/vi/1671787926.png.webp",
     "style": ""
   }
 ]

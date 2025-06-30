@@ -1,0 +1,127 @@
+[
+  {
+    "id": "baclieu",
+    "name": "Bạc Liêu",
+    "logo": "https://image.voh.com.vn/voh/image/2024/03/08/dai-bac-lieu-5---3-01-105421.jpg?w=450&h=270"
+  },
+  {
+    "id": "binhphuoc",
+    "name": "Bình Phước",
+    "logo": "https://baobinhphuoc.com.vn/upload/files/logo/audio_poster.jpg"
+  },
+  {
+    "id": "binhthuan",
+    "name": "Bình Thuận",
+    "logo": "https://quantri.binhthuantv.vn/wp-content/uploads/2024/08/RADIONEW2024-825x510.png"
+  },
+  {
+    "id": "cantho",
+    "name": "Cần Thơ",
+    "logo": "https://image.voh.com.vn/voh/image/2024/03/08/dai-can-tho-5---3-01-114215.jpg"
+  },
+  {
+    "id": "danang",
+    "name": "Đà Nẵng",
+    "logo": "http://danangtv.vn/images/radio.png"
+  },
+  {
+    "id": "daklak",
+    "name": "Đắk Lắk",
+    "logo": "https://static.wikia.nocookie.net/logos/images/f/f3/Logo_DRT_FM_92%2C4MHz_%26_FM_94%2C7MHz.png/revision/latest/scale-to-width-down/1082?cb=20220613173357&path-prefix=vi"
+  },
+  {
+    "id": "dongthap",
+    "name": "Đồng Tháp",
+    "logo": "https://image.voh.com.vn/voh/image/2023/12/27/thumbnail-dai-dong-thap-app-102539.jpg"
+  },
+  {
+    "id": "hanoi90",
+    "name": "Hà Nội FM 90",
+    "logo": "https://dug0nmhkbevod.vcdn.cloud/MAM/OVP/Image/Playlist/2022/11/04/logo/04112022110831/110832_z3846211079342_aa59839f019726c4b788c89d47e06ff5.jpg"
+  },
+  {
+    "id": "hanoi96",
+    "name": "Hà Nội FM 96",
+    "logo": "https://dug0nmhkbevod.vcdn.cloud/MAM/OVP/Image/Playlist/2022/11/04/logo/04112022110840/110840_z3846211089905_39c77a676e0692f17b29aa41d76314a1.jpg"
+  },
+  {
+    "id": "hatinh",
+    "name": "Hà Tĩnh",
+    "logo": "https://cdn.hqth.me/logo/thumbs/143.png"
+  },
+  {
+    "id": "haiphong937",
+    "name": "Hải Phòng FM 93.7Mhz",
+    "logo": "https://thhp.vn/common/v1/images/radio1.png"
+  },
+  {
+    "id": "haiphong102",
+    "name": "Hải Phòng FM 102.2Mhz",
+    "logo": "https://thhp.vn/common/v1/images/radio2.png"
+  },
+  {
+    "id": "haugiang",
+    "name": "Hậu Giang",
+    "logo": "http://haugiangtivi.vn/public/Home/imghg/radio.gif"
+  },
+  {
+    "id": "kontum",
+    "name": "Kon Tum",
+    "logo": "https://kontumtv.vn/wp-content/uploads/2020/12/FM95.1-1.jpg"
+  },
+  {
+    "id": "longan",
+    "name": "Long An",
+    "logo": "https://beta.la34.com.vn/upload/files/logo/icon_app_long_an-38.png"
+  },
+  {
+    "id": "laichau",
+    "name": "Lai Châu",
+    "logo": "https://cdn.hqth.me/logo/thumbs/154.png"
+  },
+  {
+    "id": "nghean",
+    "name": "Nghệ An",
+    "logo": "https://truyenhinhnghean.vn/common/v2/image/logo_player.jpg"
+  },
+  {
+    "id": "ninhbinh",
+    "name": "Ninh Bình",
+    "logo": "https://nbtv.vn/templates/frontend/nbtv/Assets/img/audio_bg.jpg"
+  },
+  {
+    "id": "ninhthuan",
+    "name": "Ninh Thuận",
+    "logo": "https://quantri.ninhthuantv.vn/wp-content/uploads/2021/12/5.png"
+  },
+  {
+    "id": "thanhhoa",
+    "name": "Thanh Hóa",
+    "logo": "https://static.mediacdn.vn/truyenhinhthanhhoa.vn/image/logo-radio.png"
+  },
+  {
+    "id": "tiengiang",
+    "name": "Tiền Giang",
+    "logo": "http://www.thtg.vn/wp-content/themes/thtg/images/FM96_2.jpg"
+  },
+  {
+    "id": "travinh",
+    "name": "Trà Vinh",
+    "logo": "https://quantri.travinhtv.vn/wp-content/uploads/2022/03/HINH-NEN-WEB-RADIO.jpg"
+  },
+  {
+    "id": "tuyenquang",
+    "name": "Tuyên Quang",
+    "logo": "https://cdn.hqth.me/logo/thumbs/182.png"
+  },
+  {
+    "id": "vinhlong",
+    "name": "Vĩnh Long",
+    "logo": "https://cdn.hqth.me/logo/thumbs/255.png"
+  },
+  {
+    "id": "yenbai",
+    "name": "Yên Bái",
+    "logo": "https://cdn.hqth.me/logo/thumbs/184.png"
+  }
+]

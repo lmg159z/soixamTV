@@ -1,0 +1,152 @@
+{
+  "baclieu": {
+    "id": "baclieu",
+    "name": "Bạc Liêu",
+    "streamLink": "https://tv.thbl.vn/live/radio/radio.m3u8",
+    "style": "radio"
+  },
+  "binhphuoc": {
+    "id": "binhphuoc",
+    "name": "Bình Phước",
+    "streamLink": "https://live.baobinhphuoc.com.vn/bptvlive/radio.m3u8",
+    "style": "radio"
+  },
+  "binhthuan": {
+    "id": "binhthuan",
+    "name": "Bình Thuận",
+    "streamLink": "https://64d0d74b76158.streamlock.net/BTVR/binhthuanradio/chunklist_w1604506166.m3u8",
+    "style": "radio"
+  },
+  "cantho": {
+    "id": "cantho",
+    "name": "Cần Thơ",
+    "streamLink": "https://live.canthotv.vn/live/radio/chunklist_w1780522487.m3u8",
+    "style": "radio"
+  },
+  "danang": {
+    "id": "danang",
+    "name": "Đà Nẵng",
+    "streamLink": "https://live.mediatech.vn/live/2858a998b1c7fbf4522accd5554588ceae3/chunklist.m3u8",
+    "style": "radio"
+  },
+  "daklak": {
+    "id": "daklak",
+    "name": "Đắk Lắk",
+    "streamLink": "https://cdn.drt.vn/live/285054c4567dea54b3fb14bfd60d61230b5/chunklist.m3u8",
+    "style": "radio"
+  },
+  "dongthap": {
+    "id": "dongthap",
+    "name": "Đồng Tháp",
+    "streamLink": "https://64d0d74b76158.streamlock.net/THDTR/thdtradio/chunklist.m3u8",
+    "style": "radio"
+  },
+  "hanoi90": {
+    "id": "hanoi90",
+    "name": "Hà Nội FM 90",
+    "streamLink": "https://1028513096.vnns.net/fm90/chunks.m3u8",
+    "style": "radio"
+  },
+  "hanoi96": {
+    "id": "hanoi96",
+    "name": "Hà Nội FM 96",
+    "streamLink": "https://1028513096.vnns.net/fm96/chunks.m3u8",
+    "style": "radio"
+  },
+  "hatinh": {
+    "id": "hatinh",
+    "name": "Hà Tĩnh",
+    "streamLink": "https://wse.hatinhtv.net/radio/voht/playlist.m3u8",
+    "style": "radio"
+  },
+  "haiphong937": {
+    "id": "haiphong937",
+    "name": "Hải Phòng FM 93.7Mhz",
+    "streamLink": "https://live.thhp.vn/937/index.m3u8",
+    "style": "radio"
+  },
+  "haiphong102": {
+    "id": "haiphong102",
+    "name": "Hải Phòng FM 102.2Mhz",
+    "streamLink": "https://live.thhp.vn/radio/102/index.m3u8",
+    "style": "radio"
+  },
+  "haugiang": {
+    "id": "haugiang",
+    "name": "Hậu Giang",
+    "streamLink": "https://60acee235f4d5.streamlock.net/HGTVR/hgtvradio/chunklist.m3u8",
+    "style": "radio"
+  },
+  "kontum": {
+    "id": "kontum",
+    "name": "Kon Tum",
+    "streamLink": "https://tv.kontumtv.vn/live/radio/radio.m3u8",
+    "style": "radio"
+  },
+  "longan": {
+    "id": "longan",
+    "name": "Long An",
+    "streamLink": "https://cdn.la34.com.vn/live/2851dd3d9016ac74d84b0c4a7a659f76891/chunklist.m3u8",
+    "style": "radio"
+  },
+  "laichau": {
+    "id": "laichau",
+    "name": "Lai Châu",
+    "streamLink": "https://ll4mfr7mnaliv.vcdn.cloud/laichau/radio/playlist.m3u8",
+    "style": "radio"
+  },
+  "nghean": {
+    "id": "nghean",
+    "name": "Nghệ An",
+    "streamLink": "https://live.truyenhinhnghean.vn/hls/na2/index.m3u8",
+    "style": "radio"
+  },
+  "ninhbinh": {
+    "id": "ninhbinh",
+    "name": "Ninh Bình",
+    "streamLink": "https://live.mediatech.vn/live/285391a08f01f83458793b293c5e9517265/chunklist.m3u8",
+    "style": "radio"
+  },
+  "ninhthuan": {
+    "id": "ninhthuan",
+    "name": "Ninh Thuận",
+    "streamLink": "https://618b88f69e53b.streamlock.net/NTVR/ntvradio/chunklist.m3u8",
+    "style": "radio"
+  },
+  "thanhhoa": {
+    "id": "thanhhoa",
+    "name": "Thanh Hóa",
+    "streamLink": "https://code.vthanhtivi.pw/getlink/dp/ttvradio/playlist.m3u8",
+    "style": "radio"
+  },
+  "tiengiang": {
+    "id": "tiengiang",
+    "name": "Tiền Giang",
+    "streamLink": "http://123.25.238.45:1935/live/radio/chunklist.m3u8",
+    "style": "radio"
+  },
+  "travinh": {
+    "id": "travinh",
+    "name": "Trà Vinh",
+    "streamLink": "http://202.43.109.144:1935/TV/tvaudio/playlist.m3u8",
+    "style": "radio"
+  },
+  "tuyenquang": {
+    "id": "tuyenquang",
+    "name": "Tuyên Quang",
+    "streamLink": "https://live.tuyenquangtv.vn/hls/radio.m3u8",
+    "style": "radio"
+  },
+  "vinhlong": {
+    "id": "vinhlong",
+    "name": "Vĩnh Long",
+    "streamLink": "https://code.vthanhtivi.pw/getlink/dp/thvlradio/playlist.m3u8",
+    "style": "radio"
+  },
+  "yenbai": {
+    "id": "yenbai",
+    "name": "Yên Bái",
+    "streamLink": "https://bk.yenbaitv.org.vn/hls/audio/livestream.m3u8",
+    "style": "radio"
+  }
+}

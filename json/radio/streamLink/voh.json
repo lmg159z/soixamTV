@@ -1,0 +1,26 @@
+{
+  "voh99_9": {
+    "id": "voh99_9",
+    "name": "VOH FM 99.9Mhz",
+    "streamLink": "https://strm.voh.com.vn/radio/channel3/playlist.m3u8",
+    "style": "radio"
+  },
+  "voh95_6": {
+    "id": "voh95_6",
+    "name": "VOH FM 95.6Mhz",
+    "streamLink": "https://strm.voh.com.vn/radio/channel1/playlist.m3u8",
+    "style": "radio"
+  },
+  "voh87_7": {
+    "id": "voh87_7",
+    "name": "VOH FM 87.7Mhz",
+    "streamLink": "https://strm.voh.com.vn/radio/channel5/playlist.m3u8",
+    "style": "radio"
+  },
+  "voh610": {
+    "id": "voh610",
+    "name": "VOH AM 610Khz",
+    "streamLink": "https://strm.voh.com.vn/radio/channel2/playlist.m3u8",
+    "style": "radio"
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "voh99_9",
+    "name": "VOH FM 99.9Mhz",
+    "logo": "VOH_FM_999.png"
+  },
+  {
+    "id": "voh95_6",
+    "name": "VOH FM 95.6Mhz",
+    "logo": "VOH_FM_956.png"
+  },
+  {
+    "id": "voh87_7",
+    "name": "VOH FM 87.7Mhz",
+    "logo": "VOH_FM_87.png"
+  },
+  {
+    "id": "voh610",
+    "name": "VOH AM 610Khz",
+    "logo": "VOH_FM_610.png"
+  }
+]
