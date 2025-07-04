@@ -1,7 +1,7 @@
 
 
 function play() {
-  fetch(`${GL_domain}json/tournament.json`)
+  fetch(`${GL_domain}json/tivi/tournament.json`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Lỗi HTTP: ${response.status}`);

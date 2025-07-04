@@ -2,7 +2,7 @@
 
 async function start(logoJ, main) {
   try {
-    const response = await fetch(`${GL_domain}json/streamLink/${logoJ}.json`);
+    const response = await fetch(`${GL_domain}json/tivi/streamLink/${logoJ}.json`);
     if (!response.ok) throw new Error(`Lỗi HTTP: ${response.status}`);
 
     const data = await response.json();
