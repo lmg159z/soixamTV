@@ -1,6 +1,6 @@
 
 function start(logoJ, main) {
-  fetch(`${GL_domain}json/logo/${logoJ}.json`)
+  fetch(`${GL_domain}json/tivi/logo/${logoJ}.json`)
   .then(response => {
     if (!response.ok) {
       throw new Error(`Lỗi HTTP: ${response.status}`);

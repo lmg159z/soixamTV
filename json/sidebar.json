@@ -1,16 +1,16 @@
 [
   {
-    "icon": "fa-solid fa-house",
-    "title":"Trang chủ",
+    "icon": "fa-solid fa-tv",
+    "title":"Truyền hình",
     "url":"index.html"
   },
   {
-    "icon": "fa-solid fa-house",
+    "icon": "fa-solid fa-tower-cell",
     "title":"Radio FM",
     "url":"radio"
   },
   {
-    "icon": "",
+    "icon": "fa-solid fa-baseball",
     "title":"Highlights thể thao",
     "url":"highlightsSport"
   },

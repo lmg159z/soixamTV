@@ -3,7 +3,7 @@ var video = document.getElementById('myVideo');
 ////////////////////////////
 
 function play(idStream, tag) {
-  fetch(`${GL_domain}json/streamLink/${tag}.json`)
+  fetch(`${GL_domain}json/tivi/streamLink/${tag}.json`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Lỗi HTTP: ${response.status}`);
@@ -50,7 +50,7 @@ function clearkey(url, key, style) {
   container.innerHTML = `
     <video id="myVideo"
            class="video-section"
-           poster="${GL_domain}wordspage/image/poster/TV SHOW_20250120_172203_0000.png"
+           poster="${GL_domain}wordspage/image/poster/TV_SHOW_20250120_172203_0000.png"
            controls autoplay loop muted playsinline>
     </video>
   `;
@@ -111,7 +111,7 @@ function stream(videoSrc) {
   const idHTML = document.getElementById("video")
   idHTML.innerHTML = `
       
-      <video src="${GL_domain}wordspage/video/cho.mp4"  class="video-section" id="myVideo"  poster="${GL_domain}wordspage/image/poster/TV SHOW_20250120_172203_0000.png"   loop autoplay controls
+      <video src="${GL_domain}wordspage/video/cho.mp4"  class="video-section" id="myVideo"  poster="${GL_domain}wordspage/image/poster/TV_SHOW_20250120_172203_0000.png"   loop autoplay controls
     </video>`;
   
   hls(videoSrc)
@@ -121,7 +121,7 @@ function hls_creat_multi(videoSrc, audioSrc) {
   const idHTML = document.getElementById("video")
   idHTML.innerHTML = `
       
-      <video src="${GL_domain}wordspage/video/cho.mp4"  class="video-section" id="myVideo"  poster="${GL_domain}wordspage/image/poster/TV SHOW_20250120_172203_0000.png"  autoplay controls>
+      <video src="${GL_domain}wordspage/video/cho.mp4"  class="video-section" id="myVideo"  poster="${GL_domain}wordspage/image/poster/TV_SHOW_20250120_172203_0000.png"  autoplay controls>
       </video>
       <audio id="myAudio"  autoplay muted></audio>
      `;

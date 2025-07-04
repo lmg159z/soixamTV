@@ -26,7 +26,7 @@ async function loop(list) {
 }
 
 function getChannel(name, logo, stream) {
-  return fetch(`${GL_domain}json/logo/${logo}.json`)
+  return fetch(`${GL_domain}json/tivi/logo/${logo}.json`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Lỗi HTTP: ${response.status}`);

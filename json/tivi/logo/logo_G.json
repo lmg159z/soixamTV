@@ -1,0 +1,272 @@
+[
+  {
+    "id": "an_giang_1",
+    "name": "An Giang 1",
+    "logo": "ATV1_2025.png"
+  },
+  {
+    "id": "an_giang_2",
+    "name": "An Giang 2",
+    "logo": " "
+  },
+  {
+    "id": "an_giang_3",
+    "name": "An Giang 3",
+    "logo": "ATV3_2025.png"
+  },
+  {
+    "id": "bac_ninh",
+    "name": "Bắc Ninh",
+    "logo": "https://bacgiangtv.vn/upload/files/logo_btv.png?v=3.71"
+  },
+  {
+    "id": "bac_ninh_bac_giang",
+    "name": "Bắc Ninh - Bắc giang",
+    "logo": "https://bacgiangtv.vn/upload/files/logo_btv.png?v=3.71"
+  },
+  {
+    "id": "ca_mau",
+    "name": "Cà Mau",
+    "logo": "CTV_HD_CaMau_2024.png"
+  },
+  {
+    "id": "cao_bang",
+    "name": "cao bằng",
+    "logo": "https://mediaresources.caobangtv.vn/files/2025/2/19/UZRH25C9Z62W.png"
+  },
+  {
+    "id": "da_nang_1",
+    "name": "Đà Nẵng 1",
+    "logo": " "
+  },
+  {
+    "id": "da_nang_2",
+    "name": "Đà nẵng 2",
+    "logo": " "
+  },
+  {
+    "id": "dak_lak",
+    "name": "Đắk Lắk",
+    "logo": "DRT_HD_DakLak.png"
+  },
+  {
+    "id": "dien_bien",
+    "name": "Điện Biên",
+    "logo": "DTV_HD_DienBien.png"
+  },
+  {
+    "id": "dong_nai_1",
+    "name": "Đồng Nai 1",
+    "logo": "DN1-RTV.png"
+  },
+  {
+    "id": "dong_nai_2",
+    "name": "Đồng Nai 2",
+    "logo": "DN1-RTV.png"
+  },
+  {
+    "id": "dong_thap",
+    "name": "Đồng tháp",
+    "logo": "THDT1_DongThap.png"
+  },
+  {
+    "id": "dong_thap_tien_giang",
+    "name": "Đồng tháp - Tiền Giang",
+    "logo": "THTG_HD_logo_2023_2.png"
+  },
+  {
+    "id": "dong_thap_2_mien_tay",
+    "name": "đồng tháp 2 - miền tây",
+    "logo": "THDT2_DongThap.png"
+  },
+  {
+    "id": "gia_lai",
+    "name": "Gia Lai",
+    "logo": "THGL_HD_Gia_Lai.png"
+  },
+  {
+    "id": "ha_noi_1",
+    "name": "Hà Nội 1",
+    "logo": "HanoiTV1_HD_HaNoi.png"
+  },
+  {
+    "id": "ha_noi_2",
+    "name": "Hà Nội 2",
+    "logo": "HanoiTV2_HD_HaNoi.png"
+  },
+  {
+    "id": "ha_noi_2_4k",
+    "name": "Hà Nội 2 4k",
+    "logo": "HanoiTV2_HD_HaNoi.png"
+  },
+  {
+    "id": "ha_tinh",
+    "name": "Hà Tĩnh",
+    "logo": "https://hatinhtv.vn/Media/FileManager/logo/nocompressbht.png"
+  },
+  {
+    "id": "hai_phong_1",
+    "name": "Hải Phòng 1",
+    "logo": "https://media.thhp.vn/upload/files/avatar/NewFolder/Logo_THP.png"
+  },
+  {
+    "id": "hai_phong_3",
+    "name": "Hải phòng 3",
+    "logo": "https://thhp3.vn/upload/files/logo/Logo_THP3_chuan.png"
+  },
+  {
+    "id": "hai_phong_plus",
+    "name": "Hải Phòng Plus",
+    "logo": " "
+  },
+  {
+    "id": "hcm_binh_duong_1",
+    "name": "HCM - Bình Dương 1",
+    "logo": "BTV1_HD_logo_2024.png"
+  },
+  {
+    "id": "hcm_binh_duong_2",
+    "name": "HCM - Bình Dương 2",
+    "logo": "BTV2_HD_logo.png"
+  },
+  {
+    "id": "hcm_ba_ria_vung_tau",
+    "name": "HCM -Bà Rịa vũng tàu",
+    "logo": "BRT_VungTau.png"
+  },
+  {
+    "id": "hue",
+    "name": "Huế",
+    "logo": "HUETV.png"
+  },
+  {
+    "id": "hung_yen",
+    "name": "Hưng Yên",
+    "logo": "HY_logo_2021_(Hungyentv_Go).png"
+  },
+  {
+    "id": "khanh_hoa",
+    "name": "Khánh Hoà",
+    "logo": "https://ktv.org.vn/wp-content/uploads/2024/02/LOGO-TET.png"
+  },
+  {
+    "id": "khanh_hoa_1",
+    "name": "Khánh hoà 1",
+    "logo": "KTV1_HD_logo.png"
+  },
+  {
+    "id": "lai_chau",
+    "name": "Lai Châu",
+    "logo": "LTV_HD_LC_logo_06-06-2022.png"
+  },
+  {
+    "id": "lang_son",
+    "name": "Lạng sơn",
+    "logo": "LSTV_HD_logo.png"
+  },
+  {
+    "id": "lao_cai",
+    "name": "Lào cai",
+    "logo": "THLC_2023-2024.png"
+  },
+  {
+    "id": "lam_dong",
+    "name": "lâm đồng",
+    "logo": "LTV_HD_Lam_Dong_10-03-2023.png"
+  },
+  {
+    "id": "nghe_an",
+    "name": "Nghệ an",
+    "logo": "NTV_HD_Nghe_An_2019.png"
+  },
+  {
+    "id": "ninh_binh",
+    "name": "Ninh Bình",
+    "logo": "NTV_HD_Ninh_Binh.png"
+  },
+  {
+    "id": "phu_tho",
+    "name": "Phú Thọ",
+    "logo": "PTV_HD_logo_2023.png"
+  },
+  {
+    "id": "quang_ngai",
+    "name": "Quảng ngãi",
+    "logo": "https://mediaptq.mediatech.vn/upload//files/logo/28_6_2025_logo_png.png"
+  },
+  {
+    "id": "quang_ninh_1",
+    "name": "Quảng Ninh 1",
+    "logo": "QTV1_HD_2019.png"
+  },
+  {
+    "id": "quang_ninh_3",
+    "name": "Quảng Ninh 3",
+    "logo": "QTV2_logo_2003.png"
+  },
+  {
+    "id": "quang_tri",
+    "name": "Quảng trị",
+    "logo": "QTTV_quangtri.png"
+  },
+  {
+    "id": "son_la",
+    "name": "Sơn la",
+    "logo": "STV_HD_Son_La.png"
+  },
+  {
+    "id": "tay_ninh_1",
+    "name": "Tây Ninh 1",
+    "logo": " "
+  },
+  {
+    "id": "tay_ninh_2",
+    "name": "Tây Ninh 2",
+    "logo": " "
+  },
+  {
+    "id": "thai_nguyen",
+    "name": "Thái Nguyên",
+    "logo": "TN_logo_2018_(TN2).png"
+  },
+  {
+    "id": "thanh_hoa",
+    "name": "Thanh Hoá",
+    "logo": "Logo_TTV_Thanh_Hoa.png"
+  },
+  {
+    "id": "tp_can_tho_1",
+    "name": "TP. Cần thơ",
+    "logo": "Logo_THTPCT_HD_2022.png"
+  },
+  {
+    "id": "tp_can_tho_2",
+    "name": "TP. Cần thơ",
+    "logo": "https://m.thst.vn/img/ct2live.png"
+  },
+  {
+    "id": "tuyen_quang",
+    "name": "Tuyên Quang",
+    "logo": "https://tuyenquangtv.vn/common/v1/images/logofooter.svg"
+  },
+  {
+    "id": "vinh_long_1",
+    "name": "Vĩnh Long 1",
+    "logo": "THVL1_HD_logo_04-02-2024.png"
+  },
+  {
+    "id": "vinh_long_2",
+    "name": "Vĩnh long 2",
+    "logo": "THVL2_HD_logo_04-02-2024.png"
+  },
+  {
+    "id": "vinh_long_3",
+    "name": "Vĩnh long 3",
+    "logo": "THVL3_HD_logo_04-02-2024.png"
+  },
+  {
+    "id": "vinh_long_4",
+    "name": "Vĩnh long 4",
+    "logo": "THVL4_HD_logo_04-02-2024.png"
+  }
+]
