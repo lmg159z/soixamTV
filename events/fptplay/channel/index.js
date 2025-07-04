@@ -1,7 +1,7 @@
 
 
 function play() {
-  fetch(`${GL_domain}json/tivi/tournament.json`)
+  fetch(`${GL_domain}json/tournament.json`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Lỗi HTTP: ${response.status}`);
@@ -161,7 +161,7 @@ function streamH(videoName) {
 
 
 function fpt(idStream) {
-  fetch(`${GL_domain}json/streamLink/TV_e_fptplay.json`)
+  fetch(`${GL_domain}json/tivi/streamLink/TV_e_fptplay.json`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Lỗi HTTP: ${response.status}`);
