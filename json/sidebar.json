@@ -10,11 +10,6 @@
     "url":"radio"
   },
   {
-    "icon": "fa-solid fa-baseball",
-    "title":"Highlights thể thao",
-    "url":"highlightsSport"
-  },
-  {
     "icon": "",
     "title":"Thể thao onplus",
     "url":"events/onVTVCAB"

@@ -1,6 +1,6 @@
 
 
-function play() {
+function vi() {
   fetch(`${GL_domain}json/tournament.json`)
     .then(response => {
       if (!response.ok) {
@@ -15,8 +15,8 @@ function play() {
       console.error("Lỗi khi gọi API:", error.message);
     });
 }
+vi()
 
-play()
 
 function layTatCaGiaiDau(data) {
   // Kiểm tra xem data có phải là mảng không
@@ -148,42 +148,21 @@ function formatTime(seconds) {
   }
 }
 
+
+
+
+
 function streamH(videoName) { 
- const video = `https://livevlive.vtvcab.vn/hls/vod/newonsports/DISTRIBUTE/${videoName}/sc-gaFEAQ/v2_index.m3u8`
- const audio = `https://livevlive.vtvcab.vn/hls/vod/newonsports/DISTRIBUTE/${videoName}/sc-gaFEAQ/a0_index.m3u8`
- hls_multi(
-  video,
-  audio,
-  "myVideo",
-  "myAudio"
-);
+ 
+
+ crateHTML(
+   {
+   streamLink:`https://livevlive.vtvcab.vn/hls/vod/newonsports/DISTRIBUTE/${videoName}/sc-gaFEAQ/v2_index.m3u8`,
+    audio: `https://livevlive.vtvcab.vn/hls/vod/newonsports/DISTRIBUTE/${videoName}/sc-gaFEAQ/a0_index.m3u8`,
+    style: "hls_multi"
+   }
+ )
 }
 
 
-function fpt(idStream) {
-  fetch(`${GL_domain}json/tivi/streamLink/TV_e_fptplay.json`)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Lỗi HTTP: ${response.status}`);
-      }
-      return response.json(); // Chuyển dữ liệu phản hồi thành JSON
-    })
-    .then(data => {
-      if (data[idStream].style == "m3u8"){
-       hls(data[idStream].streamLink) 
-      }
-      if (data[idStream].style == "hls_multi"){
-          hls_multi(
-      data[idStream].streamLink,
-      typeof data[idStream].audio  !== 'undefined' ? data[idStream].audio : "",
-      "myVideo",
-      "myAudio"
-    );
-      }
-    })
-    .catch(error => {
-      console.error("Lỗi khi gọi API:", error.message);
-    });
-  
-}
 

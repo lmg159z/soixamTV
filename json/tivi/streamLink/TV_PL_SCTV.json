@@ -71,7 +71,7 @@
   },
   "sctv18": {
     "name": "SCTV4",
-    "streamLink": "https://liveh12.seenow.vn/hls/SCTV4/index.m3u8",
+    "streamLink": "https://liveh12.seenow.vn/hls/SCTV18/index.m3u8",
     "style": "m3u8"
   }
 }

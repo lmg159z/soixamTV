@@ -10,13 +10,11 @@
 html, body {
   font-family: Arial, sans-serif;
   font-size: 100%;
-  vertical-align: baseline;
+  line-height: 1;
   background-color: #0a192f;
   color: #e6f1ff;
   overflow-x: hidden;
-  line-height: 1;
 }
-
 
 ol, ul {
   list-style: none;
@@ -24,7 +22,6 @@ ol, ul {
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
 }
 
 blockquote, q {
@@ -40,127 +37,74 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+/* Header */
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #00ced1;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
 
- .header {
- width: 100%;
- height: 50px;
- background-color: #00ced1; /* Màu xanh trên cùng */
- text-align: right;
- }
+.header .menu-icon {
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+  line-height: 50px;
+  padding: 0 15px;
+}
 
- .header > .menu-icon {
- font-size: 20px;
- color: #000;
- cursor: pointer;
- line-height: 50px;
- padding: 0 15px;
- }
- 
-  .fix{
-   width: 100%;
-   position: fixed;
-   top: 0;
-   z-index: 9;
- }
+/* Sidebar */
 .sidebar {
-
   position: fixed;
   top: 0;
   left: 0;
   width: 250px;
   height: 100vh;
-  background-color: #3468c2; 
+  background-color: #3468c2;
   color: #fff;
   display: none;
   flex-direction: column;
-  padding: 20px 15px 5vh 15px;
+  padding: 20px 15px 5vh;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
   z-index: 9999999999;
-  overflow-y: scroll;
   animation: menuIn .5s ease-out;
-  }
-  @keyframes menuIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
 }
 
-  .menu {
+@keyframes menuIn {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+
+.menu {
   flex-grow: 1;
   animation: slideIn 1s ease-out;
-  }
-  @keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
 }
 
-  .menu a {
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+
+.menu a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #fff;
   padding: 10px;
   border-radius: 5px;
-  margin: 20px 0 10px 0;
+  margin: 20px 0 10px;
   transition: background-color 0.3s ease;
-  }
+}
 
-  .menu a:hover {
-  background-color: #274a89; 
-  }
+.menu a:hover {
+  background-color: #274a89;
+}
 
-  .menu a i {
+.menu a i {
   font-size: 20px;
   margin-right: 10px;
-  }
-
-
-
-.header {
-    width: 100%;
-    height: 50px;
-    background-color: #00ced1;
-    text-align: right;
-  }
-
-  .header .menu-icon {
-    font-size: 20px;
-    color: #000;
-    cursor: pointer;
-    line-height: 50px;
-    padding: 0 15px;
-  }
-  
-/*
-  #video .ifvideo {
-    position: absolute;
-    width: 100%;
-    min-height: calc(100vw * 9 / 16);
-  }
-
-  .video-section {
-    text-align: center;
-    width: 100%;
-    border-top: 10px solid #001326;
-  }
-
-  #player {
-    width: 100vw;
-    height: calc(100vw * 9 / 16);
-    border: 0;
-  }
-*/
-  .fix {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-  }
-  
+}

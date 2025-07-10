@@ -19,6 +19,7 @@
 <body>
     
     <!-- Header -->
+    
     <div class="fix">
         <div class="header">
             <div class="menu-icon" id="menuIcon">
@@ -27,26 +28,19 @@
         </div>
         
     </div>
-    <div id="video">
-     <video class="video-section" id="myVideo" src="https://live.fptplay53.net/fnxhd2/quocphongvnhd_vhls.smil/chunklist.m3u8" poster="../wordspage/image/poster/TV_SHOW_20250120_172203_0000.png" muted loop autoplay controls>
-        </video>
-    </div>
     <!-- Sidebar & Logo Section -->
     <div class="sidebar" id="menu"></div>
-    <div id="video-list" class="container">
-        
-      <!--  <div class="video-item">
-            <div class="thumbnail-container">
-                <img src="https://imgvlive.vtvcab.vn/720X405/uefa-champions-league-magazine-2425-so-29-56f0c4fe-3f2e-46f1-b325-98cea2f54edd.jpg" alt="Marquinhos Cố Gắng Trở Lên Hoàn Hảo">
-                
+    <div id="body">
+        <div id="video">
+          <div id="video_player">
+         <video class="video-section" id="myVideo" src="https://live.fptplay53.net/fnxhd2/quocphongvnhd_vhls.smil/chunklist.m3u8" poster="../wordspage/image/poster/TV_SHOW_20250120_172203_0000.png" muted loop autoplay controls>
+            </video>
             </div>
-            <div class="video-title">Marquinhos Cố Gắng Trở Lên Hoàn Hảo</div>
         </div>
-        
-        -->
-    </div>
+        <div id="list_channel" class=""></div>
+    </div>  
     <!-- JavaScript Libraries -->
-   
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
@@ -63,7 +57,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const g = p.get('groupChannel'), c = p.get('channel'), d  = p.get('groupLogo')
   if (g) {
     if (typeof start === 'function') {
-        
+      liveTheme(c)  
       start(d,g);
       play(c, g);
     } else {
