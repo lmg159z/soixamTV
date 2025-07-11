@@ -1,5 +1,10 @@
 [
 {
+  "name":"Thử nghiệm",
+  "logo":"logo_test",
+  "stream":"TV_test"
+},
+{
   "name":"Địa Phương",
   "logo":"logo_G",
   "stream":"TVLocal"
@@ -78,6 +83,11 @@
   "name": "Kênh truyền hình Nga",
   "logo": "logo_NN_RU",
   "stream": "TV_NN_RU"
+},
+{
+  "name": "Kênh truyền hình Singapore",
+  "logo": "logo_QT_SG",
+  "stream": "TV_QT_SG"
 },
 {
   "name": "Kênh Trẻ Em Quốc Tế",

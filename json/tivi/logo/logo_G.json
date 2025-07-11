@@ -7,7 +7,7 @@
   {
     "id": "an_giang_2",
     "name": "An Giang 2",
-    "logo": "ATV2.png"
+    "logo": " "
   },
   {
     "id": "an_giang_3",
@@ -37,12 +37,12 @@
   {
     "id": "da_nang_1",
     "name": "Đà Nẵng 1",
-    "logo": "DNRT1.png"
+    "logo": " "
   },
   {
     "id": "da_nang_2",
     "name": "Đà nẵng 2",
-    "logo": "DNRT2.png"
+    "logo": " "
   },
   {
     "id": "dak_lak",
@@ -117,7 +117,7 @@
   {
     "id": "hai_phong_plus",
     "name": "Hải Phòng Plus",
-    "logo": "THPPlus.png"
+    "logo": " "
   },
   {
     "id": "hcm_binh_duong_1",
@@ -217,12 +217,12 @@
   {
     "id": "tay_ninh_1",
     "name": "Tây Ninh 1",
-    "logo": "tayninh1.png"
+    "logo": " "
   },
   {
     "id": "tay_ninh_2",
     "name": "Tây Ninh 2",
-    "logo": "tayninh2.png"
+    "logo": " "
   },
   {
     "id": "thai_nguyen",

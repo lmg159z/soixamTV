@@ -1,0 +1,162 @@
+{
+  
+    "channel8": {
+  "name": "Channel 8",
+  "streamLink": "https://tglmp02.akamaized.net/out/v1/423fa206c4ea458ebe83d6edd172eb10/manifest.mpd",
+   "key": {
+     "keys": [
+  {
+  "kty": "oct",
+   "kid": "a4315e7266024dfc9ddb9667727d9635",
+   "k": "485a55859fda05a1e3e8ae1ae63906e8"
+  }
+    ],
+    "type": "temporary"
+  },
+  "style": "key"
+    },
+    "channelu": {
+  "name": "Channel U",
+  "streamLink": "https://tglmp03.akamaized.net/out/v1/151218455da04a47be327aa14be3e5cb/manifest.mpd",
+   "key": {
+     "keys": [
+  {
+  "kty": "oct",
+   "kid": "981fda1d42aa4d81b367d85794447e2a",
+   "k": "61f0b7e53768214d4d56917fbcfc2723"
+  }
+    ],
+    "type": "temporary"
+  },
+  "style": "key"
+    },
+    "cna": {
+  "name": "CNA",
+  "streamLink": "https://tglmp03.akamaized.net/out/v1/43856347987b4da3890360b0d18b5dc5/manifest.mpd",
+   "key": {
+     "keys": [
+  {
+  "kty": "oct",
+   "kid": "4ee336861eed4840a555788dc54aea6e",
+   "k": "f1f53644d4941d4ed31b4bb2478f8cf4"
+  }
+    ],
+    "type": "temporary"
+  },
+  "style": "key"
+    },
+    "suria": {
+  "name": "Channel Suria",
+  "streamLink": "https://d19h5fcpqoh625.cloudfront.net/out/v1/00ac947de8174a54bd0f52226115d1db/manifest.mpd",
+   "key": {
+     "keys": [
+  {
+  "kty": "oct",
+   "kid": "db646b3742ba42718a28436a1f401aa8",
+   "k": "75a545066954b9b7fafa96d72a844e00"
+  }
+    ],
+    "type": "temporary"
+  },
+  "style": "key"
+    },
+    "vasantham": {
+  "name": "Channel Vasantham",
+  "streamLink": "https://rest-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/147/assetId/237653/assetType/media/assetFileId/5754108/contextType/PLAYBACK/isAltUrl/False/a.mpd",
+    "key": {
+     "keys": [
+  {
+  "kty": "oct",
+   "kid": "239d5a09def64776bec6c74271dfafa9",
+   "k": "8e3c76df4951eaa21e9c9c28af6b56d1"
+  }
+    ],
+    "type": "temporary"
+  },
+  "style": "key"
+    },
+    "mediacorpentertainmentenglish": {
+  "name": "Mediacorp Entertainment English",
+  "streamLink": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/mediacorp-entertainment-english/manifest.m3u8",
+  "style": "m3u8"
+    },
+    "mediacorpentertainmenttamil": {
+  "name": "Mediacorp Entertainment Tamil",
+  "streamLink": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/mediacorp-entertainment-tamil/manifest.m3u8",
+  "style": "m3u8"
+    },
+    "mediacorpentertainmentchina": {
+  "name": "Mediacorp Entertainment China",
+  "streamLink": "https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/mediacorp-entertainment-chinese/manifest.m3u8",
+  "style": "m3u8"
+    },
+    "sport1sgp": {
+  "name": "SPORT 1 (SGP)",
+  "streamLink": "https://tglmp04.akamaized.net/out/v1/6ec3ff8c3b5649249f9c8a6e2651195a/manifest.mpd",
+   "key": {
+     "keys": [
+  {
+  "kty": "oct",
+   "kid": "9RWBlMxAROaZ0N8Bdy8iEg",
+   "k": "By5hGjg6LR49TY6hngFqcQ"
+  }
+    ],
+    "type": "temporary"
+  },
+  "style": "key"
+    },
+    "sport2sgp": {
+  "name": "SPORT 2 (SGP)",
+  "streamLink": "https://tglmp02.akamaized.net/out/v1/06bffdc183074130a6faf73d04502eaa/manifest.mpd",
+   "key": {
+     "keys": [
+  {
+  "kty": "oct",
+   "kid": "3rbITbTcRXi9qmHpZbNCTA",
+   "k": "sub/8k2mdlSvVI/mGqa9Wg"
+  }
+    ],
+    "type": "temporary"
+  },
+  "style": "key"
+    },
+  "mewatch1": {
+  "name": "meWATCH 1",
+  "streamLink": "https://tglmp04.akamaized.net/out/v1/898b1cbac7c747e3b1f3deb460e9b67e/manifest.mpd",
+    "key": {
+     "keys": [],
+    "type": "temporary"
+  },
+  "style": "key"
+    },
+    "mewatch2": {
+  "name": "meWATCH 2",
+  "streamLink": "https://tglmp02.akamaized.net/out/v1/3170252e3fb0453085f2f4b0f8401a6b/manifest.mpd",
+     "key": {
+  "keys": [
+  {
+  "kty": "oct",
+   "kid": "60dc08aae52f4c0b806a8e43f24a12c8",
+   "k": "30d5b579966d822b215ec51a91d8a271"
+  }
+    ],
+    "type": "temporary"
+  },
+  "style": "key"
+    },
+     "mewatchoktolidays": {
+  "name": "meWATCH oktolidays",
+  "streamLink": "https://tglmp03.akamaized.net/out/v1/be732843b7d24bada23e13810282e55f/manifest.mpd",
+  "key": {
+  "keys": [
+  {
+  "kty": "oct",
+   "kid": "612eb711dfb444f7a194c5e20d7f7048",
+   "k": "b6226449b9ed5066542e6d6ad5ecb346"
+  }
+    ],
+    "type": "temporary"
+  },
+  "style": "key"
+    }
+}
