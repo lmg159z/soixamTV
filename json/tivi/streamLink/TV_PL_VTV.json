@@ -32,7 +32,7 @@
   },
   "vtv5": {
     "name": "VTV5",
-    "streamLink": "https://live.fptplay53.net/epzhd1/vtv5hd_vhls.smil/chunklist.m3u8",
+    "streamLink":"https://live.fptplay53.net/epzhd1/vtv5hd_vhls.smil/chunklist.m3u8",
     "audio": "",
     "style": "m3u8"
   },

@@ -7,7 +7,7 @@
   {
     "id": "an_giang_2",
     "name": "An Giang 2",
-    "logo": " "
+    "logo": "ATV2.png"
   },
   {
     "id": "an_giang_3",
@@ -37,12 +37,12 @@
   {
     "id": "da_nang_1",
     "name": "Đà Nẵng 1",
-    "logo": " "
+    "logo": "DNRT1.png"
   },
   {
     "id": "da_nang_2",
     "name": "Đà nẵng 2",
-    "logo": " "
+    "logo": "DNRT2.png"
   },
   {
     "id": "dak_lak",
@@ -65,14 +65,14 @@
     "logo": "DN1-RTV.png"
   },
   {
-    "id": "dong_thap",
-    "name": "Đồng tháp",
-    "logo": "THDT1_DongThap.png"
-  },
-  {
     "id": "dong_thap_tien_giang",
     "name": "Đồng tháp - Tiền Giang",
     "logo": "THTG_HD_logo_2023_2.png"
+  },
+  {
+    "id": "dong_thap",
+    "name": "Đồng tháp 1",
+    "logo": "THDT1_DongThap.png"
   },
   {
     "id": "dong_thap_2_mien_tay",
@@ -117,7 +117,7 @@
   {
     "id": "hai_phong_plus",
     "name": "Hải Phòng Plus",
-    "logo": " "
+    "logo": "THPPlus.png"
   },
   {
     "id": "hcm_binh_duong_1",
@@ -217,12 +217,12 @@
   {
     "id": "tay_ninh_1",
     "name": "Tây Ninh 1",
-    "logo": " "
+    "logo": "tayninh1.png"
   },
   {
     "id": "tay_ninh_2",
     "name": "Tây Ninh 2",
-    "logo": " "
+    "logo": "tayninh2.png"
   },
   {
     "id": "thai_nguyen",
