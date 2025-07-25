@@ -45,3 +45,15 @@ function innerChannel(src, name, id) {
     </a>
   `);
 }
+
+
+
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+      start("TV_e_fptplay", "TV_e_fptplay");
+    });
