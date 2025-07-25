@@ -1,2 +1,2 @@
-var GL_domain = "/https://soixamtv.vercel.app/";
+var GL_domain = "https://soixamtv.vercel.app/";
 
