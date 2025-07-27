@@ -1,0 +1,92 @@
+#body{
+  max-width: 700px;
+  margin: 60px auto 10px auto;
+} 
+
+ h1 {
+color: #2c3e50;
+font-size: 24px;
+margin-bottom: 20px;
+ }
+
+ .copy-container {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+align-items: center;
+  
+ }
+
+ .copy-url {
+flex: 1 1 30px;
+padding: 10px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 6px;
+ }
+
+ .btn-icon {
+font-size: 18px;
+padding: 10px 14px;
+border: none;
+background-color: #3498db;
+color: white;
+cursor: pointer;
+border-radius: 6px;
+transition: background 0.3s ease;
+ }
+
+ .btn-icon:hover {
+background-color: #2c82c9;
+ }
+
+ table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+ }
+
+ th, td {
+padding: 12px 8px;
+text-align: center;
+border-bottom: 1px solid #eaeaea;
+ }
+
+thead th {
+  position: sticky;
+  top: 0; /* hoặc top: 60px nếu bạn có header cố định cao 60px */
+  background-color: #f1f1f1;
+  font-weight: 600;
+  color: #000;
+  z-index: 2; /* cao hơn các dòng thường */
+  padding: 12px 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+ img {
+  width: 60px;
+  max-width: 80%;
+  max-height: 80%;
+ }
+
+ @media (max-width: 600px) {
+.copy-container {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.btn-icon {
+  width: 100%;
+  justify-content: center;
+}
+
+table, thead, tbody, th, td, tr {
+  font-size: 14px;
+}
+
+img {
+  max-width: 80%;
+  max-height: 80%;
+}
+ }

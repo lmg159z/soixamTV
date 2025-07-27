@@ -14,25 +14,21 @@ function start(logoJ, main) {
   });
 
 }
-const channel = document.getElementById("video-list")
 
-function logo(logoChannel, main ) {
-  const squaredNumbers = logoChannel.map(num => 
-    `
-     <div class="video-item"  onclick="play('${num.id}','${main}'); updateURL('${num.id}')" >
-            <div class="thumbnail-container">
-                <img alt="${num.id}"  src="${(num.logo.includes("http") ? num.logo : `${GL_domain}wordspage/image/logo/${num.logo}`)}">
-                
-            </div>
-            <div class="video-title">${num.name}</div>
-        </div>
-    `
-    );
-  //console.log(squaredNumbers.join(""))
-  channel.innerHTML = squaredNumbers.join("")
+const channel = document.getElementById("list_channel");
+
+function logo(logoChannel, main) {
+  const html = logoChannel.map(num => `
+    <div class="list-channel-item" onclick="play('${num.id}','${main}'); updateURL('${num.id}'); liveTheme('${num.id}')">
+      <div id="${num.id}" class="list-channel-item-logo">
+        <img alt="${num.id}" src="${num.logo.includes("http") ? num.logo : `${GL_domain}wordspage/image/logo/${num.logo}`}">
+      </div>
+      <div class="title">${num.name}</div>
+    </div>
+  `);
+  
+  channel.innerHTML = html.join("");
 }
-
-
  
 function updateURL(id) {
   const params = new URLSearchParams(window.location.search);
@@ -77,31 +73,6 @@ function playRadio(streamUrl) {
 }
 
 
-/*function checkRadioUrl(url) {
-  const fallback = 'https://files.catbox.moe/onhht8.mp3';
-
-  // Kiểm tra xem chuỗi có phải là URL hợp lệ không
-  try {
-    new URL(url); // Nếu lỗi sẽ nhảy xuống catch
-  } catch (e) {
-    return fallback;
-  }
-
-  // Nếu là URL hợp lệ, kiểm tra xem có hoạt động không
-  const xhr = new XMLHttpRequest();
-  xhr.open('HEAD', url, false); // ⚠️ Đồng bộ, chỉ nên dùng cho mục đích đơn giản
-  try {
-    xhr.send();
-    if (xhr.status >= 200 && xhr.status < 400) {
-      return url;
-    } else {
-      return fallback;
-    }
-  } catch (e) {
-    return fallback;
-  }
-}*/
-
 function checkRadioUrl(url) {
   var fallback = 'https://files.catbox.moe/onhht8.mp3';
   var xhr = new XMLHttpRequest();
@@ -115,5 +86,28 @@ function checkRadioUrl(url) {
     }
   } catch (e) {
     return fallback;
+  }
+}
+
+let currentLiveId = null;
+
+function liveTheme(id) {
+  const applyLive = (el) => {
+    // Bỏ class cũ nếu có
+    if (currentLiveId && currentLiveId !== id) {
+      const oldEl = document.getElementById(currentLiveId);
+      if (oldEl) oldEl.classList.remove("live");
+    }
+    
+    el.classList.add("live");
+    currentLiveId = id;
+  };
+  
+  const tag = document.getElementById(id);
+  if (tag) {
+    applyLive(tag);
+  } else {
+    // Chờ phần tử có id xuất hiện
+    waitForElement(`#${id}`, applyLive);
   }
 }

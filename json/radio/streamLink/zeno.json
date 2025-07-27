@@ -2,37 +2,37 @@
   "zeno_mradio": {
     "id": "zeno_mradio",
     "name": "M Radio Việt Nam",
-    "streamLink": "https://stream.zeno.fm/4q7y9hvkp2zuv",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://stream.zeno.fm/4q7y9hvkp2zuv",
     "style": "radio"
   },
   "zeno_cailuong": {
     "id": "zeno_cailuong",
     "name": "Cải Lương Việt Nam",
-    "streamLink": "https://stream.zeno.fm/0trm6wrnga0uv",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://stream.zeno.fm/0trm6wrnga0uv",
     "style": "radio"
   },
   "zeno_nhacvangxua": {
     "id": "zeno_nhacvangxua",
     "name": "Radio Nhạc Vàng Xưa",
-    "streamLink": "https://stream.zeno.fm/x2z45v7d84zuv",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://stream.zeno.fm/x2z45v7d84zuv",
     "style": "radio"
   },
   "zeno_dj": {
     "id": "zeno_dj",
     "name": "Radio DJ",
-    "streamLink": "https://stream.zeno.fm/ehbutdfccm0uv",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://stream.zeno.fm/ehbutdfccm0uv",
     "style": "radio"
   },
   "zeno_phatgiao": {
     "id": "zeno_phatgiao",
     "name": "Radio Phật Giáo",
-    "streamLink": "https://stream.zeno.fm/8456uy0bcm0uv",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://stream.zeno.fm/8456uy0bcm0uv",
     "style": "radio"
   },
   "zeno_danca": {
     "id": "zeno_danca",
     "name": "Radio Nhạc Dân Ca",
-    "streamLink": "https://stream.zeno.fm/a2dbs2tq1p8uv",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://stream.zeno.fm/a2dbs2tq1p8uv",
     "style": "radio"
   }
 }

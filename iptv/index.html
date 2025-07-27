@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách kênh IPTV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/sidebar.css" />
+  <link rel="stylesheet" href="./index.css" title="" type="" />
+ 
+</head>
+<body>
+  
+  
+  
+  <div class="fix">
+    <div class="header">
+      <div class="menu-icon" id="menuIcon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar" id="menu"></div>
+  
+  
+  
+<div id="body">
+  
+
+  <h1>Danh sách kênh IPTV</h1>
+
+  <div class="copy-container">
+    <label for="iptv-url"><strong>IPTV:</strong></label>
+    <input type="text" id="iptv-url" class="copy-url" value="https://soixam-iptv-api.vercel.app/api/playlist.m3u" readonly>
+    
+    <button class="btn-icon" onclick="copyURL()" title="Sao chép IPTV">
+      <i class="fa-solid fa-copy"></i>
+    </button>
+    </button>
+  </div>
+
+  <table id="table_list_channels"></table>
+</div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
+  </script>
+  <script src="../JavaScript/data.js" defer></script>
+  <script src="../JavaScript/sidebar.js" defer></script>
+  <script src="./index.js"></script>
+  <script>
+    function copyURL() {
+      const input = document.getElementById("iptv-url");
+      navigator.clipboard.writeText(input.value)
+        .then(() => alert("Đã sao chép: " + input.value))
+        .catch(() => alert("Không thể sao chép"));
+    }
+
+    function goToTV() {
+      const input = document.getElementById("iptv-url");
+      window.open(input.value, "_blank");
+    }
+  </script>
+
+</body>
+</html>

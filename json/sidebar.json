@@ -18,6 +18,11 @@
     "icon": "fa-solid fa-f",
     "title": "Thể thao FPT",
     "url": "events/fptplay"
+  },
+  {
+    "icon": "fa-solid fa-link fa-flip-vertical",
+    "title": "Xem IPTV",
+    "url": "iptv"
   }
 
 ]

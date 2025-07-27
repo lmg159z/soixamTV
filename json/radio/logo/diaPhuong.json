@@ -1,213 +1,152 @@
 [
-  
   {
-    "id": "angiang",
-    "name": "An Giang ",
-    "logo": ""
+    "id": "radio_an_giang_944",
+    "name": "Radio AN GIANG 94.4",
+    "logo": "https://angiangtv.vn/wp-content/themes/daith2020/imgs/logo.png"
   },
   {
-    "id": "bacninh",
-    "name": "Bắc Ninh",
-    "logo": "BGTV_2023.png"
+    "id": "radio_an_giang_931",
+    "name": "Radio An Giang 93.1",
+    "logo": "https://angiangtv.vn/wp-content/themes/daith2020/imgs/logo.png"
   },
   {
-    "id": "bariavungtau",
-    "name": "Bà Rịa vũng tàu (TP.HCM)",
-    "logo": ""
+    "id": "radio_ba_ria_vung_tau_92",
+    "name": "Radio Bà Rịa Vũng Tàu 92",
+    "logo": "https://brt.vn/static/images/logo.png"
   },
   {
-    "id": "binhduong",
-    "name": "Bình Dương ",
-    "logo": ""
+    "id": "radio_bac_ninh",
+    "name": "Radio Bắc Ninh",
+    "logo": "http://bacgiangtv.vn/upload/files/logo_btv.png?v=3.78"
   },
   {
-    "id": "binhthuan",
-    "name": "Bình Thuận",
-    "logo": "https://s14.gifyu.com/images/bxdkA.webp"
+    "id": "radio_binh_duong",
+    "name": "Radio Bình Dương",
+    "logo": "http://img.btv.org.vn:81/upload/vod/10112016/1478747759_kenhbtvRadiogif.gif"
   },
   {
-    "id": "camau",
-    "name": "Cà Mau",
-    "logo": ""
+    "id": "radio_lam_dong_923",
+    "name": "Radio Lâm Đồng 92.3",
+    "logo": "https://upload.wikimedia.org/wikipedia/vi/thumb/c/c5/Logo_LTV_-_B%C3%A1o_v%C3%A0_Ph%C3%A1t_thanh_-_Truy%E1%BB%81n_h%C3%ACnh_L%C3%A2m_%C4%90%E1%BB%93ng.png/500px-Logo_LTV_-_B%C3%A1o_v%C3%A0_Ph%C3%A1t_thanh_-_Truy%E1%BB%81n_h%C3%ACnh_L%C3%A2m_%C4%90%E1%BB%93ng.png"
   },
   {
-    "id": "cantho",
-    "name": "TP. Cần Thơ",
-    "logo": "Logo_THTPCT_HD_2022.png"
+    "id": "radio_ca_mau",
+    "name": "Radio Cà Mau",
+    "logo": "CTV_HD_CaMau_2024.png"
   },
   {
-    "id": "caobang",
-    "name": "cao bằng",
-    "logo": ""
+    "id": "radio_can_tho_973",
+    "name": "Radio Cần Thơ 97.3",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Logo_THTPCT.png/500px-Logo_THTPCT.png"
   },
   {
-    "id": "daklak",
-    "name": "Đắk Lắk",
-    "logo": "DRT_HD_DakLak.png"
+    "id": "radio_da_nang_985mhz",
+    "name": "Radio Đà Nẵng 98.5Mhz",
+    "logo": "https://danangtv.vn/images/radionew1.png"
   },
   {
-    "id": "danang",
-    "name": "Đà Nẵng ",
-    "logo": ""
+    "id": "radio_dak_lak",
+    "name": "Radio Dắk Lắk",
+    "logo": "https://media.drt.vn/upload/files/image/LOGO_DRT_HD_2023-2.png"
   },
   {
-    "id": "dienbien",
-    "name": "Điện Biên",
-    "logo": ""
+    "id": "radio_dong_thap",
+    "name": "Radio Đồng Tháp",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/TH%C4%90T-Logo.png/250px-TH%C4%90T-Logo.png"
   },
   {
-    "id": "dongnai",
-    "name": "Đồng Nai ",
-    "logo": ""
+    "id": "radio_gia_lai",
+    "name": "Radio Gia Lai",
+    "logo": "https://gialaitv.vn/wp-content/themes/carrington-mobile/img/logo.png?070702025"
   },
   {
-    "id": "dongthap",
-    "name": "Đồng Tháp",
-    "logo": "THDT1_DongThap.png"
+    "id": "radio_ha_noi_fm90",
+    "name": "Radio Hà Nội FM90",
+    "logo": "https://cloudwebhn.tek4tv.vn/image/logo.webp"
   },
   {
-    "id": "gialai",
-    "name": "Gia Lai",
-    "logo": ""
+    "id": "radio_ha_noi_fm96",
+    "name": "Radio Hà Nội FM96",
+    "logo": "https://cloudwebhn.tek4tv.vn/image/logo.webp"
   },
   {
-    "id": "haiphong",
-    "name": "Hải Phòng ",
-    "logo": ""
+    "id": "radio_ha_tinh",
+    "name": "Radio Hà Tĩnh",
+    "logo": "https://hatinhtv.vn/Media/FileManager/logo/nocompressbht.png"
   },
   {
-    "id": "hanoi1",
-    "name": "Hà Nội 1",
-    "logo": ""
+    "id": "radio_hai_phong_937mhz",
+    "name": "Radio Hải Phòng 93.7Mhz",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/THP_logo.svg/250px-THP_logo.svg.png"
   },
   {
-    "id": "hanoi2",
-    "name": "Hà Nội 2",
-    "logo": ""
+    "id": "radio_hai_phong_1022mhz",
+    "name": "Radio Hải Phòng 102.2Mhz",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/THP_logo.svg/250px-THP_logo.svg.png"
   },
   {
-    "id": "hatinh",
-    "name": "Hà Tĩnh",
-    "logo": "HTTV_HD_HaTinh.png"
+    "id": "radio_hue_930mhz",
+    "name": "Radio Huế 93.0Mhz",
+    "logo": "https://huetv.com.vn/uploads/static/Banner/LogoHueTV.png"
   },
   {
-    "id": "hue",
-    "name": "Huế",
-    "logo": "HUETV.png"
+    "id": "radio_khanh_hoa",
+    "name": "Radio Khánh Hoà",
+    "logo": "https://ktv.org.vn/wp-content/uploads/2024/02/LOGO-TET.png"
   },
   {
-    "id": "hungyen",
-    "name": "Hưng Yên",
-    "logo": ""
+    "id": "radio_lang_son",
+    "name": "Radio Lạng Sơn",
+    "logo": "https://langsontv.vn/templates/frontend/lstv/Assets/img/logo_lstv.png"
   },
   {
-    "id": "khanhhoa",
-    "name": "Khánh Hoà",
-    "logo": ""
+    "id": "radio_nghe_an",
+    "name": "Radio Nghệ An",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Logo_NTV_Ngh%E1%BB%87_An_2017.png/250px-Logo_NTV_Ngh%E1%BB%87_An_2017.png"
   },
   {
-    "id": "haiduong",
-    "name": "Hải Dương",
-    "logo": "https://s14.gifyu.com/images/bxdvM.webp"
+    "id": "radio_ninh_binh",
+    "name": "Radio  Ninh Bình",
+    "logo": "https://nbtv.vn/templates/frontend/nbtv/Assets/img/logo.png"
   },
   {
-    "id": "haugiang",
-    "name": "Hâụ Giang",
-    "logo": "https://s14.gifyu.com/images/bxdvx.webp"
+    "id": "radio_phu_tho",
+    "name": "Radio Phú Thọ",
+    "logo": "https://phuthotv.vn/sites/all/themes/custom_theme/images/logo.png"
   },
   {
-    "id": "laichau",
-    "name": "Lai Châu",
-    "logo": ""
+    "id": "radio_quang_ngai",
+    "name": "Radio Quảng Ngãi",
+    "logo": "https://mediaptq.mediatech.vn/upload//files/logo/28_6_2025_logo_png.png"
   },
   {
-    "id": "lamdong",
-    "name": "lâm đồng",
-    "logo": ""
+    "id": "radio_quang_ninh_1_978mhz",
+    "name": "Radio  Quảng Ninh 1 -97.8Mhz",
+    "logo": "https://media.baoquangninh.vn/upload/files/logo/logotrangchu4.png"
   },
   {
-    "id": "langson",
-    "name": "Lạng sơn",
-    "logo": "LSTV_HD_logo.png"
+    "id": "radio_quang_ninh_2_947mhz",
+    "name": "Radio  Quảng Ninh 2 -94.7Mhz",
+    "logo": "https://media.baoquangninh.vn/upload/files/logo/logotrangchu3.png"
   },
   {
-    "id": "laocai",
-    "name": "Lào Cai",
-    "logo": ""
+    "id": "radio_quang_tri",
+    "name": "Radio Quảng trị",
+    "logo": "QTTV_quangtri.png"
   },
   {
-    "id": "longantayninh",
-    "name": "Long an - Tây Ninh",
-    "logo": ""
+    "id": "radio_son_la",
+    "name": "Radio Sơn La",
+    "logo": "https://media.sonlatv.vn/upload/files/image/logo-chan-trang.png"
   },
   {
-    "id": "nghean",
-    "name": "Nghệ an",
-    "logo": ""
+    "id": "radio_thai_nguyen",
+    "name": "Radio Thái Nguyên",
+    "logo": "https://thainguyentv.vn/modules/frontend/themes/ptthtn/images/pc/logo.png?v=2.620250701080027"
   },
   {
-    "id": "ninhbinh",
-    "name": "Ninh Bình",
-    "logo": ""
-  },
-  {
-    "id": "phutho",
-    "name": "Phú Thọ",
-    "logo": "PTV_HD_logo_2023.png"
-  },
-  {
-    "id": "quangngai",
-    "name": "Quảng Ngãi",
-    "logo": ""
-  },
-  {
-    "id": "quangninh1",
-    "name": "Quảng Ninh 1 97.8Mhz",
-    "logo": "QTV1_HD_2019.png"
-  },
-  {
-    "id": "quangninh2",
-    "name": "Quảng Ninh 94.7Mhz ",
-    "logo": "QTV1_HD_2019.png"
-  },
-  {
-    "id": "quangtri",
-    "name": "Quảng Trị",
-    "logo": "QRTV_logo_14-01-2025.png"
-  },
-  {
-    "id": "sonla",
-    "name": "Sơn la",
-    "logo": "STV_HD_Son_La.png"
-  },
-  {
-    "id": "soctrang",
-    "name": "Sóc Trăng",
-    "logo": "https://s14.gifyu.com/images/bxdvd.webp"
-  },
-  {
-    "id": "tayninh11",
-    "name": "Tây Ninh 11",
-    "logo": "TTV11_TayNinhTV_2020.png"
-  },
-  {
-    "id": "thainguyen",
-    "name": "Thái Nguyên",
-    "logo": "TN_logo_2018_(TN2).png"
-  },
-  {
-    "id": "thanhhoa",
-    "name": "Thanh Hoá",
-    "logo": "Logo_TTV_Thanh_Hoa.png"
-  },
-  {
-    "id": "tuyenquang",
-    "name": "Tuyên Quang",
-    "logo": "TTV_HD_Tuyen_Quang_logo_.pn"
-  },
-  {
-    "id": "vinhlong",
-    "name": "Vĩnh Long ",
-    "logo": "https://s14.gifyu.com/images/bxdvc.webp"
+    "id": "radio_tuyen_quang",
+    "name": "Radio Tuyên Quang",
+    "logo": "https://tuyenquangtv.vn/common/v1/images/logofooter.svg"
   }
 ]

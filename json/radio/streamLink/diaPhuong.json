@@ -1,254 +1,182 @@
 {
-  "angiang": {
-    "id": "angiang",
-    "name": "An Giang ",
-    "streamLink": "https://tv.angiangtv.vn/live/kgaudio/kgaudio.m3u8",
+  "radio_an_giang_944": {
+    "id": "radio_an_giang_944",
+    "name": "Radio AN GIANG 94.4",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://tv.angiangtv.vn/live/kgaudio/kgaudio.m3u8",
     "style": "radio"
   },
-  "bacninh": {
-    "id": "bacninh",
-    "name": "Bắc Ninh",
-    "streamLink": "https://stream.thingnet.vn/radio/bacninh_aac/playlist.m3u8",
+  "radio_an_giang_931": {
+    "id": "radio_an_giang_931",
+    "name": "Radio An Giang 93.1",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://tv.angiangtv.vn/live/kgtv3/kgtv3.m3u8",
     "style": "radio"
   },
-  "bariavungtau": {
-    "id": "bariavungtau",
-    "name": "Bà Rịa vũng tàu (TP.HCM)",
+  "radio_ba_ria_vung_tau_92": {
+    "id": "radio_ba_ria_vung_tau_92",
+    "name": "Radio Bà Rịa Vũng Tàu 92",
     "streamLink": "",
     "style": "radio"
   },
-  "binhduong": {
-    "id": "binhduong",
-    "name": "Bình Dương ",
-    "streamLink": "",
+  "radio_bac_ninh": {
+    "id": "radio_bac_ninh",
+    "name": "Radio Bắc Ninh",
+    "streamLink": "https://1253668792.e.cdneverest.net/S_epeZk7mYVXf7gIU-02gA/1753591203/live/285983d45f5bdab43ebb4cab75573adeda1/playlist.m3u8",
     "style": "radio"
   },
-  "binhthuan": {
-    "id": "binhthuan",
-    "name": "Bình Thuận",
-    "streamLink": "https://64d0d74b76158.streamlock.net/BTVR/binhthuanradio/chunklist_w2064814410.m3u8",
+  "radio_binh_duong": {
+    "id": "radio_binh_duong",
+    "name": "Radio Bình Dương",
+    "streamLink": "https://btvfm011220.cdn.vnns.io/1130fc3449681cbcca8ea4c5c5070c021753554969/btv-fm.tms/playlist.m3u8",
     "style": "radio"
   },
-  "camau": {
-    "id": "camau",
-    "name": "Cà Mau",
-    "streamLink": "https://tv.ctvcamau.vn/live/radio/radio.m3u8",
+  "radio_lam_dong_923": {
+    "id": "radio_lam_dong_923",
+    "name": "Radio Lâm Đồng 92.3",
+    "streamLink": "https://64d0d74b76158.streamlock.net/BTVR/binhthuanradio/playlist.m3u8",
     "style": "radio"
   },
-  "cantho": {
-    "id": "cantho",
-    "name": "TP. Cần Thơ",
+  "radio_ca_mau": {
+    "id": "radio_ca_mau",
+    "name": "Radio Cà Mau",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://tv.ctvcamau.vn/live/radio/radio.m3u8",
+    "style": "radio"
+  },
+  "radio_can_tho_973": {
+    "id": "radio_can_tho_973",
+    "name": "Radio Cần Thơ 97.3",
     "streamLink": "https://live.canthotv.vn/live/radio/chunklist_w164665463.m3u8",
     "style": "radio"
   },
-  "caobang": {
-    "id": "caobang",
-    "name": "cao bằng",
-    "streamLink": "",
+  "radio_da_nang_985mhz": {
+    "id": "radio_da_nang_985mhz",
+    "name": "Radio Đà Nẵng 98.5Mhz",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://live.mediatech.vn/live/2858a998b1c7fbf4522accd5554588ceae3/chunklist.m3u8",
     "style": "radio"
   },
-  "daklak": {
-    "id": "daklak",
-    "name": "Đắk Lắk",
-    "streamLink": "https://cdn.drt.vn/live/285054c4567dea54b3fb14bfd60d61230b5/chunklist.m3u8",
+  "radio_dak_lak": {
+    "id": "radio_dak_lak",
+    "name": "Radio Dắk Lắk",
+    "streamLink": "https://cdn.drt.vn/live/285054c4567dea54b3fb14bfd60d61230b5/playlist.m3u8",
     "style": "radio"
   },
-  "danang": {
-    "id": "danang",
-    "name": "Đà Nẵng ",
-    "streamLink": "https://live.mediatech.vn/live/2858a998b1c7fbf4522accd5554588ceae3/chunklist.m3u8",
-    "style": "radio"
-  },
-  "dienbien": {
-    "id": "dienbien",
-    "name": "Điện Biên",
-    "streamLink": "",
-    "style": "radio"
-  },
-  "dongnai": {
-    "id": "dongnai",
-    "name": "Đồng Nai ",
-    "streamLink": "",
-    "style": "radio"
-  },
-  "dongthap": {
-    "id": "dongthap",
-    "name": "Đồng Tháp",
+  "radio_dong_thap": {
+    "id": "radio_dong_thap",
+    "name": "Radio Đồng Tháp",
     "streamLink": "https://64d0d74b76158.streamlock.net/THDTR/thdtradio/chunklist_w461590749.m3u8",
     "style": "radio"
   },
-  "gialai": {
-    "id": "gialai",
-    "name": "Gia Lai",
-    "streamLink": "https://tv.gialaitv.vn/radio.m3u8",
+  "radio_gia_lai": {
+    "id": "radio_gia_lai",
+    "name": "Radio Gia Lai",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://tv.gialaitv.vn/radio.m3u8",
     "style": "radio"
   },
-  "haiphong": {
-    "id": "haiphong",
-    "name": "Hải Phòng ",
-    "streamLink": "",
+  "radio_ha_noi_fm90": {
+    "id": "radio_ha_noi_fm90",
+    "name": "Radio Hà Nội FM90",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://cloudcdnfm90.tek4tv.vn/HANOIFM90/stream.m3u8",
     "style": "radio"
   },
-  "hanoi1": {
-    "id": "hanoi1",
-    "name": "Hà Nội 1",
-    "streamLink": "",
+  "radio_ha_noi_fm96": {
+    "id": "radio_ha_noi_fm96",
+    "name": "Radio Hà Nội FM96",
+    "streamLink": "https://cloudcdnfm90.tek4tv.vn/HANOI96/stream.m3u8",
     "style": "radio"
   },
-  "hanoi2": {
-    "id": "hanoi2",
-    "name": "Hà Nội 2",
-    "streamLink": "",
-    "style": "radio"
-  },
-  "hatinh": {
-    "id": "hatinh",
-    "name": "Hà Tĩnh",
+  "radio_ha_tinh": {
+    "id": "radio_ha_tinh",
+    "name": "Radio Hà Tĩnh",
     "streamLink": "https://wse.hatinhtv.net/radio/voht/chunklist_w258568941.m3u8",
     "style": "radio"
   },
-  "hue": {
-    "id": "hue",
-    "name": "Huế",
-    "streamLink": "https://live.huetv.com.vn/TRT-Online/chunklist.m3u8",
+  "radio_hai_phong_937mhz": {
+    "id": "radio_hai_phong_937mhz",
+    "name": "Radio Hải Phòng 93.7Mhz",
+    "streamLink": "https://1253562137.e.cdneverest.net/GVteG5ynNyVfSTDrUfm4ew/1753631648/live/2853ef29ebf29c64155acb32d102dd69a4a/playlist.m3u8",
     "style": "radio"
   },
-  "hungyen": {
-    "id": "hungyen",
-    "name": "Hưng Yên",
-    "streamLink": "",
+  "radio_hai_phong_1022mhz": {
+    "id": "radio_hai_phong_1022mhz",
+    "name": "Radio Hải Phòng 102.2Mhz",
+    "streamLink": "https://1253562137.e.cdneverest.net/PxbhocWTdtDozQia1aXv9w/1753631648/live/285c1421f29d05045909836b37313898e2f/playlist.m3u8",
     "style": "radio"
   },
-  "khanhhoa": {
-    "id": "khanhhoa",
-    "name": "Khánh Hoà",
-    "streamLink": "https://tv.ktv.org.vn/hls/radio.m3u8",
+  "radio_hue_930mhz": {
+    "id": "radio_hue_930mhz",
+    "name": "Radio Huế 93.0Mhz",
+    "streamLink": "https://live.huetv.com.vn/Radio-online/chunklist.m3u8",
     "style": "radio"
   },
-  "haiduong": {
-    "id": "haiduong",
-    "name": "Hải Dương",
-    "streamLink": "https://live.haiduongtv.vn/live/2858f932f24fa494996afb93ae0a7896ef9/chunklist.m3u8",
+  "radio_khanh_hoa": {
+    "id": "radio_khanh_hoa",
+    "name": "Radio Khánh Hoà",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://tv.ktv.org.vn/hls/radio.m3u8",
     "style": "radio"
   },
-  "haugiang": {
-    "id": "haugiang",
-    "name": "Hâụ Giang",
-    "streamLink": "https://60acee235f4d5.streamlock.net/HGTVR/hgtvradio/chunklist_w1828942019.m3u8",
-    "style": "radio"
-  },
-  "laichau": {
-    "id": "laichau",
-    "name": "Lai Châu",
-    "streamLink": "",
-    "style": "radio"
-  },
-  "lamdong": {
-    "id": "lamdong",
-    "name": "lâm đồng",
-    "streamLink": "",
-    "style": "radio"
-  },
-  "langson": {
-    "id": "langson",
-    "name": "Lạng sơn",
+  "radio_lang_son": {
+    "id": "radio_lang_son",
+    "name": "Radio Lạng Sơn",
     "streamLink": "https://media.bacgiangtv.vn/live/langsonradio_aac/chunklist_w1791198812.m3u8",
     "style": "radio"
   },
-  "laocai": {
-    "id": "laocai",
-    "name": "Lào Cai",
-    "streamLink": "",
+  "radio_nghe_an": {
+    "id": "radio_nghe_an",
+    "name": "Radio Nghệ An",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://live.mediatech.vn/live/285bfb777e354ec43038aa68950adbac3a4/playlist.m3u8",
     "style": "radio"
   },
-  "longantayninh": {
-    "id": "longantayninh",
-    "name": "Long an - Tây Ninh",
-    "streamLink": "https://cdn.la34.com.vn/live/2851dd3d9016ac74d84b0c4a7a659f76891/chunklist.m3u8",
+  "radio_ninh_binh": {
+    "id": "radio_ninh_binh",
+    "name": "Radio  Ninh Bình",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://live.mediatech.vn/live/285391a08f01f83458793b293c5e9517265/chunklist.m3u8",
     "style": "radio"
   },
-  "nghean": {
-    "id": "nghean",
-    "name": "Nghệ an",
-    "streamLink": "",
-    "style": "radio"
-  },
-  "ninhbinh": {
-    "id": "ninhbinh",
-    "name": "Ninh Bình",
-    "streamLink": "https://live.mediatech.vn/live/285391a08f01f83458793b293c5e9517265/chunklist.m3u8",
-    "style": "radio"
-  },
-  "phutho": {
-    "id": "phutho",
-    "name": "Phú Thọ",
+  "radio_phu_tho": {
+    "id": "radio_phu_tho",
+    "name": "Radio Phú Thọ",
     "streamLink": "https://cdn.3ssoft.vn/audio/phuthotv/phuthotv/index.m3u8",
     "style": "radio"
   },
-  "quangngai": {
-    "id": "quangngai",
-    "name": "Quảng Ngãi",
-    "streamLink": "",
+  "radio_quang_ngai": {
+    "id": "radio_quang_ngai",
+    "name": "Radio Quảng Ngãi",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://live.mediatech.vn/live/2853bb18b89d074498c81d7a0deb32a3755/playlist.m3u8",
     "style": "radio"
   },
-  "quangninh1": {
-    "id": "quangninh1",
-    "name": "Quảng Ninh 1 97.8Mhz",
+  "radio_quang_ninh_1_978mhz": {
+    "id": "radio_quang_ninh_1_978mhz",
+    "name": "Radio  Quảng Ninh 1 -97.8Mhz",
     "streamLink": "https://live.baoquangninh.vn/qtvlive/qnr1.m3u8",
     "style": "radio"
   },
-  "quangninh2": {
-    "id": "quangninh2",
-    "name": "Quảng Ninh 2 94.7Mhz",
+  "radio_quang_ninh_2_947mhz": {
+    "id": "radio_quang_ninh_2_947mhz",
+    "name": "Radio  Quảng Ninh 2 -94.7Mhz",
     "streamLink": "https://live.baoquangninh.vn/qtvlive/qnr2.m3u8",
     "style": "radio"
   },
-  "quangtri": {
-    "id": "quangtri",
-    "name": "Quảng Trị",
+  "radio_quang_tri": {
+    "id": "radio_quang_tri",
+    "name": "Radio Quảng trị",
     "streamLink": "https://quangtritv.vn/audios/audiovnpt2024.m3u8",
     "style": "radio"
   },
-  "sonla": {
-    "id": "sonla",
-    "name": "Sơn la",
-    "streamLink": "8",
+  "radio_son_la": {
+    "id": "radio_son_la",
+    "name": "Radio Sơn La",
+    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://cdn.sonlatv.vn/live/285bfb76d0d7a3c4615b853fe7a698e150c/chunklist.m3u8",
     "style": "radio"
   },
-  "soctrang": {
-    "id": "soctrang",
-    "name": "Sóc Trăng",
-    "streamLink": "https://pa.thst.vn/hls-live/livepkgr/_definst_/liveevent/livestreamf.m3u8",
-    "style": "radio"
-  },
-  "tayninh11": {
-    "id": "tayninh11",
-    "name": "Tây Ninh 11",
-    "streamLink": "",
-    "style": "radio"
-  },
-  "thainguyen": {
-    "id": "thainguyen",
-    "name": "Thái Nguyên",
+  "radio_thai_nguyen": {
+    "id": "radio_thai_nguyen",
+    "name": "Radio Thái Nguyên",
     "streamLink": "https://radio.thainguyentv.vn/hls/livestream.m3u8",
     "style": "radio"
   },
-  "thanhhoa": {
-    "id": "thanhhoa",
-    "name": "Thanh Hoá",
-    "streamLink": "",
-    "style": "radio"
-  },
-  "tuyenquang": {
-    "id": "tuyenquang",
-    "name": "Tuyên Quang",
+  "radio_tuyen_quang": {
+    "id": "radio_tuyen_quang",
+    "name": "Radio Tuyên Quang",
     "streamLink": "https://streaming.tuyenquangtv.vn/channel/tuyenquang_radio/chunks.m3u8",
-    "style": "radio"
-  },
-  "vinhlong": {
-    "id": "vinhlong",
-    "name": "Vĩnh Long ",
-    "streamLink": "",
     "style": "radio"
   }
 }
