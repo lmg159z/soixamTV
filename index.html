@@ -43,15 +43,17 @@
 </div>
   <!-- Thư viện JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      AOS.init();
-    });
-  </script>
+  
 
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest" defer></script>
   <script src="./JavaScript/data.js" defer></script>
   <script src="./JavaScript/sidebar.js" defer></script>
-  <script src="./JavaScript/listTV.js" defer></script>
+  <script src="./JavaScript/listTV.js" ></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
+    });
+    start("logoTV")
+  </script>
 </body>
 </html>

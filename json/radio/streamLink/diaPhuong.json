@@ -74,7 +74,7 @@
   "radio_ha_noi_fm90": {
     "id": "radio_ha_noi_fm90",
     "name": "Radio Hà Nội FM90",
-    "streamLink": "https://soixam-iptv-api.vercel.app/api/iptv?url=https://cloudcdnfm90.tek4tv.vn/HANOIFM90/stream.m3u8",
+    "streamLink": "https://cloudcdnfm90.tek4tv.vn/HANOIFM90/stream.m3u8",
     "style": "radio"
   },
   "radio_ha_noi_fm96": {

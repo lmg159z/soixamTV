@@ -1,6 +1,6 @@
 
-function start(logoJ, main) {
-  fetch(`${GL_domain}json/tivi/logo/${logoJ}.json`)
+function start(group) {
+  fetch(`https://soixamapi.vercel.app/api/listLogo?idGroup=${group}`)
   .then(response => {
     if (!response.ok) {
       throw new Error(`Lỗi HTTP: ${response.status}`);
@@ -8,7 +8,7 @@ function start(logoJ, main) {
     return response.json(); // Chuyển dữ liệu phản hồi thành JSON
   })
   .then(data => {
-    logo(data,main)
+    logo(data,)
     console.log(data)
     })
   .catch(error => {
@@ -19,11 +19,11 @@ function start(logoJ, main) {
 
 const channel = document.getElementById("list_channel");
 
-function logo(logoChannel, main) {
+function logo(logoChannel, ) {
   const html = logoChannel.map(num => `
-    <div class="list-channel-item" onclick="play('${num.id}','${main}'); updateURL('${num.id}'); liveTheme('${num.id}')">
-      <div id="${num.id}" class="list-channel-item-logo">
-        <img alt="${num.id}" src="${num.logo.includes("http") ? num.logo : `${GL_domain}wordspage/image/logo/${num.logo}`}">
+    <div class="list-channel-item" onclick="play('${num.STT}','${num.idGroup}'); updateURL('${num.STT}'); liveTheme('${num.STT}')">
+      <div id="channel_${num.STT}" class="list-channel-item-logo">
+        <img alt="${num.STT}" src="${num.logo.includes("http") ? num.logo : `${GL_domain}wordspage/image/logo/${num.logo}`}">
       </div>
       <div class="title">${num.name}</div>
     </div>
@@ -32,13 +32,13 @@ function logo(logoChannel, main) {
   channel.innerHTML = html.join("");
 }
 
+
 function updateURL(id) {
   const params = new URLSearchParams(window.location.search);
   params.set("channel", id);
   const newUrl = `${window.location.pathname}?${params.toString()}`;
   history.pushState(null, '', newUrl);
 }
-
 
 
 let currentLiveId = null;
@@ -60,7 +60,8 @@ function waitForElement(selector, callback, timeout = 5000) {
 }
 
 // Hàm thêm class "live" vào đúng phần tử, bỏ class khỏi cái trước
-function liveTheme(id) {
+function liveTheme(STT) {
+  const id = `channel_${STT}`
   const applyLive = (el) => {
     // Bỏ class cũ nếu có
     if (currentLiveId && currentLiveId !== id) {

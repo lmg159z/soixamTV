@@ -54,12 +54,17 @@
  <script>
 window.addEventListener("DOMContentLoaded", () => {
   const p = new URLSearchParams(location.search);
-  const g = p.get('groupChannel'), c = p.get('channel'), d  = p.get('groupLogo')
+  const g = p.get('groupChannel'), c = p.get('channel')
   if (g) {
     if (typeof start === 'function') {
+     /*
       liveTheme(c)  
-      start(d,g);
+      start(123,"diaphuong");
       play(c, g);
+      */
+      liveTheme(c) 
+      play(c,g)
+      start(g)
     } else {
       console.error("start() function not found");
     }

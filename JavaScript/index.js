@@ -2,9 +2,9 @@ var video = document.getElementById('myVideo');
 
 ////////////////////////////
 
-function play(idStream, tag) {
-  console.log(idStream,tag)
-  fetch(`${GL_domain}json/tivi/streamLink/${tag}.json`)
+function play(idStream, group) {
+  console.log(idStream,group)
+  fetch(`https://soixamapi.vercel.app/api/getStreamURL?STT=${idStream}&idGroup=${group}`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Lỗi HTTP: ${response.status}`);
@@ -12,9 +12,7 @@ function play(idStream, tag) {
       return response.json(); // Chuyển dữ liệu phản hồi thành JSON
     })
     .then(data => {
-      console.log(idStream)
-      /*liveTheme(idStream)*/
-      crateHTML(data[idStream])
+      crateHTML(data[0])
     })
     .catch(error => {
       console.error("Lỗi khi gọi API:", error.message);
@@ -22,66 +20,81 @@ function play(idStream, tag) {
   
 }
 
+/*
+[
+  {
+    "STT": 123,
+    "name": "Tây Ninh 2",
+    "idGroup": "diaphuong",
+    "group": "Địa Phương ",
+    "logo": "tayninh2.png",
+    "url": "https://live.fptplay53.net/epzsd1/tayninhhd_hls.smil/chunklist.m3u8",
+    "audio": null,
+    "drm": false,
+    "key": null,
+    "keyID": null
+  }
+]*/
+
+
+
+
 
 
 function crateHTML(data) {
-  console.log(data.style)
-  const videoHTML = `
-    <video id="myVideo"
-           class="video-section"
-           poster="${GL_domain}wordspage/image/poster/TV_SHOW_20250120_172203_0000.png"
-           controls autoplay loop  playsinline>
-    </video>
-  `
-  const audioHTML = `<audio id="myAudio"  autoplay ></audio>`
-  const linlHTML =`<a class="video-section" tagret="_bank"  href="${data.streamLink}">Click vào đây để xem</a>`
-  const iframeHTML = `<iframe src="${data.streamLink}" class="ifvideo" width="100%" allow="autoplay" muted allowfullscreen></iframe>`
-  const logoHTML = `<img src="${GL_domain}wordspage/image/logo.png" class="logo-overlay" id="logo">`
-  const idHTML = document.getElementById("video")
+  console.log(data);
 
- /*********Dieu kien************/
-  switch (data.style) {
+  const idHTML = document.getElementById("video");
+  if (!idHTML || !data || !data.type) return;
+
+  const poster = `${GL_domain}wordspage/image/poster/TV_SHOW_20250120_172203_0000.png`;
+  const logoHTML = `<img src="${GL_domain}wordspage/image/logo.png" class="logo-overlay" id="logo">`;
+  const videoHTML = `<video id="myVideo" class="video-section" poster="${poster}" controls autoplay loop playsinline></video>`;
+  const audioHTML = `<audio id="myAudio" class="video-section" autoplay></audio>`;
+  const iframeHTML = `<iframe src="${data.url}" class="ifvideo" width="100%" allow="autoplay" muted allowfullscreen></iframe>`;
+  const linkHTML = `<a class="video-section" target="_blank" href="${data.url}">Click vào đây để xem</a>`;
+
+  let content = ""; // HTML sẽ render vào idHTML.innerHTML
+
+  switch (data.type) {
     case 'm3u8':
-      idHTML.innerHTML = `
+      content = `
         <div id="video_player">
-            ${videoHTML}
-            ${logoHTML}
-        </div>
-      `
-      hls(data.streamLink);
+          ${videoHTML}
+          ${logoHTML}
+        </div>`;
+      idHTML.innerHTML = content;
+      hls(data.url);
       break;
-    /*******************/  
+
     case 'hls_multi':
-      idHTML.innerHTML = `
+      content = `
         <div id="video_player">
-            ${videoHTML}
-            ${audioHTML}
-            ${logoHTML}
-        </div>
-            `
-     hls_multi(
-     data.streamLink,
-     data.audio,
-     "myVideo",
-     "myAudio"
-    );
-      break
-      
-    /*******************/  
+          ${videoHTML}
+          ${audioHTML}
+          ${logoHTML}
+        </div>`;
+      idHTML.innerHTML = content;
+      hls_multi(data.streamLink, data.audio, "myVideo", "myAudio");
+      break;
+
     case 'key':
-      idHTML.innerHTML = `
+      content = `
         <div id="video_player">
-            ${videoHTML}
-            ${logoHTML}
-        </div>
-            `
-     playShakaStream(
-       data.streamLink,
-       data.key,
-       "myVideo"
-     );
-      break
-    /*******************/  
+          ${videoHTML}
+          ${logoHTML}
+        </div>`;
+      idHTML.innerHTML = content;
+      playShakaStream(data.url, {
+        keys: [{
+          kty: "oct",
+          k: data.key,
+          kid: data.keyID
+        }],
+        type: "temporary"
+      }, "myVideo");
+      break;
+
     case 'key-hex':
       idHTML.innerHTML = `
         <div id="video_player">
@@ -94,43 +107,45 @@ function crateHTML(data) {
       keys: [
         {
           kty: "oct",
-          k: hexToBase64(data.key.keys[0].k),
-          kid: hexToBase64(data.key.keys[0].kid)
+          kid: hexToBase64(data.keyID),
+          k: hexToBase64(data.key)
         }
       ]
     }  
      playShakaStream(
-       data.streamLink,
+       data.url,
        clearkeyData,
        "myVideo"
      );
-      break
+      break;
+      case 'aOnly':
+     idHTML.innerHTML = `
+         <audio id="audio" class="video-section" controls autoplay></audio>`
         
-    /*******************/  
+      playRadio(data.url,"audio")
+         const player = new MediaElementPlayer('audio', {
+      features: ['playpause','progress','volume'],
+      stretching: 'responsive',
+      success: function (media) {
+        console.log("Player đã sẵn sàng");
+      }
+    });
+      break
     case 'iframe':
-      idHTML.innerHTML = `
+      content = `
         <div id="video_player">
-            ${iframeHTML}
-            ${logoHTML}
-        </div>
-            `
-      break
-        
+          ${iframeHTML}
+          ${logoHTML}
+        </div>`;
+      idHTML.innerHTML = content;
+      break;
+
     default:
-      console.log("Không hợp lệ")
+      console.warn("Loại không hợp lệ:", data.type);
   }
 }
 
 
-
-
-
-
-
-
-function base64ToBase64Url(b64) {
-  return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-}
 
 function convertJWKS(jwks) {
   const result = {};
@@ -173,6 +188,80 @@ function playShakaStream(url, jwks, id) {
   
 }
 
+function base64ToBase64Url(b64) {
+  return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+/*
+function playShakaStream(url, key, kid, videoId) {
+  if (!shaka.Player.isBrowserSupported()) {
+    alert('Trình duyệt không hỗ trợ Shaka Player!');
+    return;
+  }
+
+  const video = document.getElementById(videoId);
+  const player = new shaka.Player(video);
+
+  // Tạo đối tượng clearKeys
+  const clearKeys = {};
+  clearKeys[kid] = key;
+
+  console.log("ClearKey Map:", clearKeys);
+
+  player.configure({
+    drm: {
+      clearKeys: clearKeys
+    }
+  });
+
+  player.load(url).then(() => {
+    console.log('Phát thành công!');
+    videoId.autoplay = true;
+    videoId.muted = false;
+    videoId.play();
+  }).catch(error => {
+    console.error('Lỗi phát:', error);
+    alert(`Lỗi phát: ${error.code}`);
+  });
+}
+
+function playShakaStream(url, key_b64, kid_b64, videoId) {
+  if (!shaka.Player.isBrowserSupported()) {
+    alert("Trình duyệt không hỗ trợ Shaka Player");
+    return;
+  }
+
+  const video = document.getElementById(videoId);
+  const player = new shaka.Player(video);
+
+  const clearKeys = { [kid_b64]: key_b64 };
+
+  player.configure({
+    drm: { clearKeys },
+    streaming: { rebufferingGoal: 2 }
+  });
+
+  player.load(url).then(() => {
+    console.log("✅ Manifest đã load");
+    const tracks = player.getVariantTracks();
+    console.log("🎞 Tracks:", tracks);
+
+    if (tracks.length === 0) {
+      alert("❌ Không có track hợp lệ. Có thể sai key/kid.");
+      return;
+    }
+
+    video.muted = true; // Bắt buộc để autoplay
+    video.autoplay = true;
+
+    return video.play();
+  }).then(() => {
+    console.log("🎬 Video đang phát");
+  }).catch(err => {
+    console.error("❌ Lỗi:", err);
+    alert(`Lỗi phát: ${err.name} | ${err.code || err.message}`);
+  });
+}
+*/
 
 function hls(videoSrc) {
   const video = document.getElementById('myVideo');
@@ -312,20 +401,54 @@ function hls_multi(videoSrc, audioSrc, idV, idA, tolerance = 0.1, syncTime = 200
   });
   
 }
-
 function hexToBase64(hexString) {
-  // Loại bỏ dấu cách và chữ hoa/thường nếu cần
+  // Chuẩn hóa hex: xóa khoảng trắng và chữ hoa
   hexString = hexString.replace(/\s+/g, '').toLowerCase();
-  
-  // Chuyển hex thành một mảng byte
-  const byteArray = [];
-  for (let i = 0; i < hexString.length; i += 2) {
-    byteArray.push(parseInt(hexString.substr(i, 2), 16));
+
+  // Kiểm tra độ dài hợp lệ
+  if (hexString.length % 2 !== 0) {
+    throw new Error("Chuỗi hex không hợp lệ (phải có độ dài chẵn)");
   }
+
+  // Chuyển hex -> Uint8Array
+  const bytes = new Uint8Array(hexString.length / 2);
+  for (let i = 0; i < hexString.length; i += 2) {
+    bytes[i / 2] = parseInt(hexString.substr(i, 2), 16);
+  }
+
+  // Chuyển Uint8Array -> base64
+  let binary = '';
+  for (let i = 0; i < bytes.length; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+
+  return btoa(binary);
+}
+
+
+function playRadio(streamUrl,id) {
+  const audio = document.getElementById(id);
+  const streamLink = checkRadioUrl(streamUrl)
+  console.log(streamLink)
+  audio.src = streamLink
+  audio.load()
+  audio.play() 
   
-  // Tạo chuỗi nhị phân từ mảng byte
-  const binaryString = String.fromCharCode(...byteArray);
-  
-  // Mã hóa base64
-  return btoa(binaryString);
+}
+
+
+function checkRadioUrl(url) {
+  var fallback = 'https://files.catbox.moe/onhht8.mp3';
+  var xhr = new XMLHttpRequest();
+  xhr.open('HEAD', url, false); // false = đồng bộ (⚠️ KHÔNG KHUYÊN DÙNG)
+  try {
+    xhr.send();
+    if (xhr.status >= 200 && xhr.status < 400) {
+      return url;
+    } else {
+      return fallback;
+    }
+  } catch (e) {
+    return fallback;
+  }
 }

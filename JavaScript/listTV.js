@@ -1,6 +1,6 @@
 
-function start() {
-  fetch(`${GL_domain}json/listChannelTV.json`)
+  function start(classify) {
+  fetch(`https://soixamapi.vercel.app/api/${classify}`)
   .then(response => {
     if (!response.ok) {
       throw new Error(`Lỗi HTTP: ${response.status}`);
@@ -9,6 +9,8 @@ function start() {
   })
   .then(data => {
   loop(data)
+  console.log(data)
+  
     })
   .catch(error => {
     console.error("Lỗi khi gọi API:", error.message);
@@ -17,34 +19,18 @@ function start() {
 
 }
 
-start()
 
-async function loop(list) {
-  for (const { name, logo, stream } of list) {
-    await getChannel(name, logo, stream);
+function loop(list) {
+  for (const i of list) {
+     innerChannel(i)  
   }
 }
 
-function getChannel(name, logo, stream) {
-  return fetch(`${GL_domain}json/tivi/logo/${logo}.json`)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Lỗi HTTP: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then(data => {
-      innerChannel(data, name, logo, stream);
-    })
-    .catch(error => {
-      console.error("Lỗi khi gọi API:", error.message);
-    });
-}
 
-function innerChannel(data, name, logo, stream) {
+function innerChannel(data) {
   const channel = document.getElementById("video-list");
-  const listChannel = data.map(c => `
-    <a href="${GL_domain}tivi/index.html?groupChannel=${stream}&groupLogo=${logo}&channel=${c.id}">
+  const listChannel = data.channel.map(c => `
+    <a href="${GL_domain}stream/index.html?groupChannel=${c.idGroup}&channel=${c.STT}">
       <div class="video-item">
         <div class="thumbnail-container">
           <img src="${(c.logo.includes('http') ? c.logo : `${GL_domain}wordspage/image/logo/${c.logo}`)}" alt="${c.name}">
@@ -55,11 +41,17 @@ function innerChannel(data, name, logo, stream) {
   `);
 
   channel.innerHTML += `
-    <div class="league-section">
-      <h2>${name}</h2>
+     <div class="league-section">
+      <h2>${data.info.group}</h2>
       <div class="video-row">
         ${listChannel.join("")}
       </div>
     </div>
   `;
 }
+
+
+
+
+
+
