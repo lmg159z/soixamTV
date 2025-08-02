@@ -2,7 +2,7 @@
 
 async function start(logoJ, main) {
   try {
-    const response = await fetch(`${GL_domain}json/tivi/streamLink/${logoJ}.json`);
+    const response = await fetch(`https://soixamapi.vercel.app/api/getURLFPT`);
     if (!response.ok) throw new Error(`Lỗi HTTP: ${response.status}`);
 
     const data = await response.json();
@@ -15,11 +15,11 @@ async function start(logoJ, main) {
 async function checkStreamLinksParallel(streams) {
   const entries = Object.values(streams);
 
-  const tasks = entries.map(async ({ streamLink, name, id }) => {
+  const tasks = entries.map(async ({ url, name, STT }) => {
     try {
-      const response = await fetch(streamLink, { method: 'HEAD' });
+      const response = await fetch(enCode(url), { method: 'HEAD' });
       if (response.ok) {
-        innerChannel(streamLink, name, id);
+        innerChannel(url, name, STT);
         /*console.log(`${name} OK: ${streamLink}`);*/
       } else {
         console.warn(`${name} lỗi: Status ${response.status}`);
@@ -37,9 +37,9 @@ function innerChannel(src, name, id) {
   if (!videoListContainer) return;
 
   videoListContainer.insertAdjacentHTML("beforeend", `
-    <a class="video-card" href="./channel/index.html?channel=${id}">
+    <a class="video-card" href="./channel/index.html?groupChannel=FPTplay&channel=${id}">
       <div class="thumbnail">
-        <video poster="https://iptv.nhadai.org/img/fpt-play.png" src="${src}" muted autoplay loop playsinline></video>
+        <video poster="https://iptv.nhadai.org/img/fpt-play.png" src="${enCode(src)}" muted autoplay loop playsinline></video>
       </div>
       <div class="title">${name}</div>
     </a>

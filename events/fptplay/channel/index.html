@@ -34,18 +34,39 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest" defer></script>
   <script src="../../../JavaScript/data.js" defer></script>
-  <script src="../../../JavaScript/index.js" defer></script>
+  <script src="../../../JavaScript/index.js" ></script>
   <script src="../../../JavaScript/sidebar.js" defer></script>
  <script src="./index.js" defer></script>
 
   <script defer>
-    document.addEventListener("DOMContentLoaded", () => {
+    
+    /*document.addEventListener("DOMContentLoaded", () => {
       AOS.init();
 
       const params = new URLSearchParams(window.location.search);
       const dataValue = params.get("channel");
       play(dataValue,"TV_e_fptplay");
     });
+    
+    */
+    
+  
+window.addEventListener("DOMContentLoaded", () => {
+  const p = new URLSearchParams(location.search);
+  const g = p.get('groupChannel'), c = p.get('channel')
+  if (g) {
+    if (typeof play  === 'function') {
+      play(c,g)
+    } else {
+      console.error("start() function not found");
+    }
+  } else {
+    document.body.innerHTML = '<h1>THIẾU THAM SỐ - missing parameter</h1>';
+  }
+});
+
+
+
   </script>
 </body>
 </html>

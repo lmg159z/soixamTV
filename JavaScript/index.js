@@ -51,8 +51,8 @@ function crateHTML(data) {
   const logoHTML = `<img src="${GL_domain}wordspage/image/logo.png" class="logo-overlay" id="logo">`;
   const videoHTML = `<video id="myVideo" class="video-section" poster="${poster}" controls autoplay loop playsinline></video>`;
   const audioHTML = `<audio id="myAudio" class="video-section" autoplay></audio>`;
-  const iframeHTML = `<iframe src="${data.url}" class="ifvideo" width="100%" allow="autoplay" muted allowfullscreen></iframe>`;
-  const linkHTML = `<a class="video-section" target="_blank" href="${data.url}">Click vào đây để xem</a>`;
+  const iframeHTML = `<iframe src="${enCode(data.url)}" class="ifvideo" width="100%" allow="autoplay" muted allowfullscreen></iframe>`;
+  const linkHTML = `<a class="video-section" target="_blank" href="${enCode(data.url)}">Click vào đây để xem</a>`;
 
   let content = ""; // HTML sẽ render vào idHTML.innerHTML
 
@@ -64,7 +64,7 @@ function crateHTML(data) {
           ${logoHTML}
         </div>`;
       idHTML.innerHTML = content;
-      hls(data.url);
+      hls(enCode(data.url));
       break;
 
     case 'hls_multi':
@@ -75,7 +75,7 @@ function crateHTML(data) {
           ${logoHTML}
         </div>`;
       idHTML.innerHTML = content;
-      hls_multi(data.streamLink, data.audio, "myVideo", "myAudio");
+      hls_multi(endCode(data.url), enCode(data.audio), "myVideo", "myAudio");
       break;
 
     case 'key':
@@ -85,11 +85,11 @@ function crateHTML(data) {
           ${logoHTML}
         </div>`;
       idHTML.innerHTML = content;
-      playShakaStream(data.url, {
+      playShakaStream(enCode(data.url), {
         keys: [{
           kty: "oct",
-          k: data.key,
-          kid: data.keyID
+          k: enCode(data.key),
+          kid: enCode(data.keyID)
         }],
         type: "temporary"
       }, "myVideo");
@@ -107,13 +107,13 @@ function crateHTML(data) {
       keys: [
         {
           kty: "oct",
-          kid: hexToBase64(data.keyID),
-          k: hexToBase64(data.key)
+          kid: hexToBase64(enCode(data.keyID)),
+          k: hexToBase64(enCode(data.key))
         }
       ]
     }  
      playShakaStream(
-       data.url,
+       enCode(data.url),
        clearkeyData,
        "myVideo"
      );
@@ -122,7 +122,7 @@ function crateHTML(data) {
      idHTML.innerHTML = `
          <audio id="audio" class="video-section" controls autoplay></audio>`
         
-      playRadio(data.url,"audio")
+      playRadio(enCode(data.url),"audio")
          const player = new MediaElementPlayer('audio', {
       features: ['playpause','progress','volume'],
       stretching: 'responsive',
