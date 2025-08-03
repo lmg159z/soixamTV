@@ -1,6 +1,6 @@
 
   function start(classify) {
-  fetch(`https://soixamapi.vercel.app/api/${classify}`)
+  fetch(`https://soixamapi.vercel.app/api/logo?type=${classify}`)
   .then(response => {
     if (!response.ok) {
       throw new Error(`Lỗi HTTP: ${response.status}`);

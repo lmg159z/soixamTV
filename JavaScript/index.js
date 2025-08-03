@@ -3,7 +3,6 @@ var video = document.getElementById('myVideo');
 ////////////////////////////
 
 function play(idStream, group) {
-  console.log(idStream,group)
   fetch(`https://soixamapi.vercel.app/api/getStreamURL?STT=${idStream}&idGroup=${group}`)
     .then(response => {
       if (!response.ok) {
@@ -19,22 +18,6 @@ function play(idStream, group) {
     });
   
 }
-
-/*
-[
-  {
-    "STT": 123,
-    "name": "Tây Ninh 2",
-    "idGroup": "diaphuong",
-    "group": "Địa Phương ",
-    "logo": "tayninh2.png",
-    "url": "https://live.fptplay53.net/epzsd1/tayninhhd_hls.smil/chunklist.m3u8",
-    "audio": null,
-    "drm": false,
-    "key": null,
-    "keyID": null
-  }
-]*/
 
 
 
