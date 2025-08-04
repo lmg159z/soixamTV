@@ -157,9 +157,9 @@ function streamH(videoName) {
 
  crateHTML(
    {
-   streamLink:`https://livevlive.vtvcab.vn/hls/vod/newonsports/DISTRIBUTE/${videoName}/sc-gaFEAQ/v2_index.m3u8`,
+   url:`https://livevlive.vtvcab.vn/hls/vod/newonsports/DISTRIBUTE/${videoName}/sc-gaFEAQ/v2_index.m3u8`,
     audio: `https://livevlive.vtvcab.vn/hls/vod/newonsports/DISTRIBUTE/${videoName}/sc-gaFEAQ/a0_index.m3u8`,
-    style: "hls_multi"
+    type: "hls_multi"
    }
  )
 }
