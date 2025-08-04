@@ -411,7 +411,7 @@ function hexToBase64(hexString) {
 
 function playRadio(streamUrl,id) {
   const audio = document.getElementById(id);
-  const streamLink = checkRadioUrl(streamUrl)
+  const streamLink = streamUrl
   console.log(streamLink)
   audio.src = streamLink
   audio.load()
