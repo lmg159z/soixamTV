@@ -1,4 +1,4 @@
-alert()
+
 
 
 const menu = document.getElementById("menu")
