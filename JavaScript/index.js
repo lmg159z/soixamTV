@@ -58,7 +58,10 @@ function crateHTML(data) {
           ${logoHTML}
         </div>`;
       idHTML.innerHTML = content;
-      hls_multi(endCode(data.url), enCode(data.audio), "myVideo", "myAudio");
+      hls_multi(
+        data.url.includes("http") ? data.url :endCode(data.url), 
+        data.audio.includes("http") ? data.audio :enCode(data.audio)
+        , "myVideo", "myAudio");
       break;
 
     case 'key':

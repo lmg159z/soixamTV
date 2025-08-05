@@ -11,16 +11,17 @@
   <link rel="stylesheet" href="../../../css/layout1.css" type="text/css" media="all" />
 </head>
 <body>
-    <div class="fix">
-        <div class="header">
-            <div class="menu-icon" id="menuIcon">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-        
+ <!-- Header -->
+  <div class="fix">
+    <div class="header">
+      <div class="menu-icon" id="menuIcon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </div>
-    <!-- Sidebar & Logo Section -->
-    <div class="sidebar" id="menu"></div>
+  </div>
+
+  <!-- Sidebar & Main Layout -->
+  <div class="sidebar" id="menu"></div>
     <div id="body">
         <div id="video">
          <div id="video_player">
@@ -39,18 +40,6 @@
  <script src="./index.js" defer></script>
 
   <script defer>
-    
-    /*document.addEventListener("DOMContentLoaded", () => {
-      AOS.init();
-
-      const params = new URLSearchParams(window.location.search);
-      const dataValue = params.get("channel");
-      play(dataValue,"TV_e_fptplay");
-    });
-    
-    */
-    
-  
 window.addEventListener("DOMContentLoaded", () => {
   const p = new URLSearchParams(location.search);
   const g = p.get('groupChannel'), c = p.get('channel')

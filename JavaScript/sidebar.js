@@ -1,3 +1,6 @@
+alert()
+
+
 const menu = document.getElementById("menu")
 const menuJson = `${GL_domain}json/sidebar.json`;
 fetch(menuJson)
