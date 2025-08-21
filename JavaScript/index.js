@@ -47,8 +47,8 @@ function crateHTML(data) {
           ${logoHTML}
         </div>`;
       idHTML.innerHTML = content;
-      hls(enCode(data.url));
-      break;
+hls(data.url.includes("http") ? data.url :enCode(data.url) );  
+break;
 
     case 'hls_multi':
       content = `
@@ -59,7 +59,7 @@ function crateHTML(data) {
         </div>`;
       idHTML.innerHTML = content;
       hls_multi(
-        data.url.includes("http") ? data.url :endCode(data.url), 
+        data.url.includes("http") ? data.url :enCode(data.url), 
         data.audio.includes("http") ? data.audio :enCode(data.audio)
         , "myVideo", "myAudio");
       break;

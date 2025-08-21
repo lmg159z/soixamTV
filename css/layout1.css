@@ -83,7 +83,7 @@
 
 
 
-#video-list{
+#video-list, #contents{
   margin-top: calc((100vw * 9 / 16) + 80px) ;
   }
 
@@ -166,8 +166,9 @@
   min-height: calc(1rem * 1.3 * 2);
 }
 
-.container, #video-list{
+.container, #video-list, #contents{
   padding: 10px 0 0 0;
+
 }
 
 
@@ -191,7 +192,7 @@
   }
 
   #list_channel,
-  #video-list {
+  #video-list, #contents {
     width: 50vw !important;
     height: calc(100% - 10px) !important;
     margin-top: 10px !important;

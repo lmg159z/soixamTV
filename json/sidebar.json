@@ -10,14 +10,19 @@
     "url":"radio"
   },
   {
-    "icon": "",
-    "title":"Thể thao onplus",
-    "url":"events/onVTVCAB"
+    "icon": "fa-solid fa-video",
+    "title":"Video",
+    "url":"video"
   },
   {
     "icon": "fa-solid fa-f",
     "title": "Thể thao FPT",
     "url": "events/fptplay"
+  },
+  {
+    "icon": "fa-duotone fa-solid fa-dice",
+    "title": "Xổ Số Kiến Thiết",
+    "url": "xoso"
   },
   {
     "icon": "fa-solid fa-link fa-flip-vertical",

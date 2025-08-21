@@ -1,4 +1,3 @@
-console.log("h")
 
 async function start(logoJ, main) {
   try {

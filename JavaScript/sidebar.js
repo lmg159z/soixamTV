@@ -13,8 +13,7 @@ fetch(menuJson)
   .then(data => {
    const menuHTML = data.map(num => 
     ` 
-    <a data-aos="fade-up"
-     data-aos-duration="1000" 
+    <a 
      href="${GL_domain}${num.url}"><i><i class="${num.icon}"></i></i>${num.title}</a>
     `
     );
