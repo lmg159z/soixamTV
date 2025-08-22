@@ -10,6 +10,11 @@
     "url":"radio"
   },
   {
+    "icon": "fa-solid fa-medal",
+    "title": "Chuối Chiên TV",
+    "url": "chuoiChienTV"
+  },
+  {
     "icon": "fa-solid fa-video",
     "title":"Video",
     "url":"video"

@@ -2,6 +2,7 @@ var video = document.getElementById('myVideo');
 
 ////////////////////////////
 
+
 function play(idStream, group) {
   fetch(`https://soixamapi.vercel.app/api/getStreamURL?STT=${idStream}&idGroup=${group}`)
     .then(response => {
@@ -48,6 +49,15 @@ function crateHTML(data) {
         </div>`;
       idHTML.innerHTML = content;
 hls(data.url.includes("http") ? data.url :enCode(data.url) );  
+break;
+case 'flv':
+      content = `
+        <div id="video_player">
+          ${videoHTML}
+          ${logoHTML}
+        </div>`;
+      idHTML.innerHTML = content;
+runFLV(data.url.includes("http") ? data.url :enCode(data.url) ,"myVideo");  
 break;
 
     case 'hls_multi':
@@ -436,5 +446,40 @@ function checkRadioUrl(url) {
     }
   } catch (e) {
     return fallback;
+  }
+}
+
+
+function runFLV(url, elementId) {
+  if (flvjs.isSupported()) {
+    const videoElement = document.getElementById(elementId);
+
+    // Nếu đã có player trước đó thì huỷ đi để tránh conflict
+    if (videoElement.player) {
+      videoElement.player.unload();
+      videoElement.player.detachMediaElement();
+      videoElement.player.destroy();
+      videoElement.player = null;
+    }
+
+    const flvPlayer = flvjs.createPlayer({
+      type: 'flv',
+      url: url,
+      isLive: true
+    });
+
+    flvPlayer.attachMediaElement(videoElement);
+    flvPlayer.load();
+
+    // Đảm bảo autoplay
+    videoElement.muted = false;     // để tránh bị block autoplay
+    videoElement.autoplay = true;
+    flvPlayer.play().catch(err => {
+      console.warn("Autoplay bị chặn:", err);
+    });
+
+    videoElement.player = flvPlayer;
+  } else {
+    console.error("Trình duyệt không hỗ trợ FLV.js");
   }
 }

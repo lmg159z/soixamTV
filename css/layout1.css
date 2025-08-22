@@ -83,7 +83,7 @@
 
 
 
-#video-list, #contents{
+#video-list, #contents, #iptv{
   margin-top: calc((100vw * 9 / 16) + 80px) ;
   }
 
@@ -192,7 +192,7 @@
   }
 
   #list_channel,
-  #video-list, #contents {
+  #video-list, #contents , #iptv{
     width: 50vw !important;
     height: calc(100% - 10px) !important;
     margin-top: 10px !important;

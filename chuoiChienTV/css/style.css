@@ -1,0 +1,159 @@
+.list_IPTV{
+  width: 100%;
+  height: auto;
+  margin: 60px 0px 0 0px;
+  display:flex;
+  flex-wrap: wrap;  
+  justify-content: center;    
+  gap: 1px; 
+}
+
+.IPTV_item{
+  width: 95%;
+  max-width: 640px;
+  position: relative;
+  align-items: center;
+ display:flex;
+ margin: 10px auto;
+}
+
+.IPTV_item img {
+ width: 100%;
+ height: auto;
+ border-radius: 10px;
+}
+
+.iptv_live {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  padding: 2px 8px;
+  background: red;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.iptv_live::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+
+  animation: livePulse 1.2s infinite;
+}
+
+@keyframes livePulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+.iptv_caster {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  padding: 4px 12px;
+  background: linear-gradient(135deg, #ff512f, #dd2476); /* cam → hồng */
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Segoe UI", sans-serif;
+
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.35);
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  animation: fadeIn 0.5s ease;
+}
+
+.iptv_caster::before {
+  content: "";
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+/****""""""***/
+
+#iptv{
+
+}
+
+.resolution {
+  width: 100%;
+  height: 60px;
+  display: flex;                   /* item theo hàng ngang */
+  overflow-x: auto;                /* bật scroll ngang */
+  gap: 10px;                       /* khoảng cách giữa item */
+  padding: 10px;
+  scroll-behavior: smooth;         /* cuộn mượt */
+  -webkit-overflow-scrolling: touch; /* hỗ trợ mobile */
+  scrollbar-width: thin;           /* Firefox */
+}
+
+.resolution::-webkit-scrollbar {
+  height: 6px;                     /* thanh cuộn ngang */
+}
+.resolution::-webkit-scrollbar-thumb {
+  background: #bbb; 
+  border-radius: 4px;
+}
+.resolution::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+.resolution_item {
+  flex: 0 0 auto;                  /* giữ item không co giãn */
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 8px;
+  color: #222;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  white-space: nowrap;             /* tránh xuống dòng */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resolution_item:hover {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  transform: scale(1.05);
+}
+
+
+#list {
+  width: 100%;
+  height: auto;
+  margin: 10px auto 0 auto;
+  border-top: 2px solid #fff;
+  display:flex;
+  flex-wrap: wrap;  
+  justify-content: center;    
+  gap: 1px; 
+}
