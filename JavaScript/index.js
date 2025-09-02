@@ -187,77 +187,9 @@ function playShakaStream(url, jwks, id) {
 function base64ToBase64Url(b64) {
   return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 }
-/*
-function playShakaStream(url, key, kid, videoId) {
-  if (!shaka.Player.isBrowserSupported()) {
-    alert('Trình duyệt không hỗ trợ Shaka Player!');
-    return;
-  }
 
-  const video = document.getElementById(videoId);
-  const player = new shaka.Player(video);
 
-  // Tạo đối tượng clearKeys
-  const clearKeys = {};
-  clearKeys[kid] = key;
 
-  console.log("ClearKey Map:", clearKeys);
-
-  player.configure({
-    drm: {
-      clearKeys: clearKeys
-    }
-  });
-
-  player.load(url).then(() => {
-    console.log('Phát thành công!');
-    videoId.autoplay = true;
-    videoId.muted = false;
-    videoId.play();
-  }).catch(error => {
-    console.error('Lỗi phát:', error);
-    alert(`Lỗi phát: ${error.code}`);
-  });
-}
-
-function playShakaStream(url, key_b64, kid_b64, videoId) {
-  if (!shaka.Player.isBrowserSupported()) {
-    alert("Trình duyệt không hỗ trợ Shaka Player");
-    return;
-  }
-
-  const video = document.getElementById(videoId);
-  const player = new shaka.Player(video);
-
-  const clearKeys = { [kid_b64]: key_b64 };
-
-  player.configure({
-    drm: { clearKeys },
-    streaming: { rebufferingGoal: 2 }
-  });
-
-  player.load(url).then(() => {
-    console.log("✅ Manifest đã load");
-    const tracks = player.getVariantTracks();
-    console.log("🎞 Tracks:", tracks);
-
-    if (tracks.length === 0) {
-      alert("❌ Không có track hợp lệ. Có thể sai key/kid.");
-      return;
-    }
-
-    video.muted = true; // Bắt buộc để autoplay
-    video.autoplay = true;
-
-    return video.play();
-  }).then(() => {
-    console.log("🎬 Video đang phát");
-  }).catch(err => {
-    console.error("❌ Lỗi:", err);
-    alert(`Lỗi phát: ${err.name} | ${err.code || err.message}`);
-  });
-}
-*/
 
 function hls(videoSrc) {
   const video = document.getElementById('myVideo');

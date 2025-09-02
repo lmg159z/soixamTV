@@ -16,6 +16,8 @@ window.addEventListener("DOMContentLoaded", () => {
     document.body.innerHTML = '<h1>THIẾU THAM SỐ - missing parameter</h1>';
   }
 });
+
+
 function getChuoiChien(id) {
   fetch(`https://hxcv.site/chuoichien/stream/${id}`)
     .then(response => {
