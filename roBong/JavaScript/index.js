@@ -40,7 +40,13 @@ function handle_html(data,title){
 
             // nếu có tên BLV thì lấy, còn không thì text fallback
             const name = commentator?.name || "Chưa có BLV";
-
+             if (i.status_text === "live"){
+              var mss = "Trực Tiếp"
+             } else if (i.status_text === "pending"){
+              var mss = "Chưa Đến Giờ"
+             } else if (i.status_text === "end"){
+              var mss = "Kết Thúc"
+             }
             return `
               <a href="${GL_domain}roBong/stream/index.html?idMatch=${i.rooms?.[0]?._id || ''}">
                 <div class="match-card">
@@ -65,7 +71,7 @@ function handle_html(data,title){
                       <span>${name}</span>
                     </div>
                     <div class="${i.status_text == "live" ? "statusLive" : "status"}">
-                      ${i.status_text == "live" ? "Trực Tiếp" : "Chưa Đến Giờ"}
+                      ${mss}
                     </div>
                   </div>
                 </div>
