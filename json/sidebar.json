@@ -20,6 +20,11 @@
     "url": "roBong"
   },
   {
+    "icon": "fa-solid fa-medal",
+    "title": "Hội Quán TV",
+    "url": "hoiQuanTV"
+  },
+  {
     "icon": "fa-solid fa-video",
     "title":"Video",
     "url":"video"
