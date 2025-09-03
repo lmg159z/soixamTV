@@ -64,8 +64,8 @@ function handle_html(data,title){
                       <img src="${avatar}" alt="">
                       <span>${name}</span>
                     </div>
-                    <div class="${i.status == 2 ? "statusLive" : "status"}">
-                      ${i.status == 2 ? "Trực Tiếp" : "Chưa Đến Giờ"}
+                    <div class="${i.status_text == "live" ? "statusLive" : "status"}">
+                      ${i.status_text == "live" ? "Trực Tiếp" : "Chưa Đến Giờ"}
                     </div>
                   </div>
                 </div>

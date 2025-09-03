@@ -1,0 +1,112 @@
+
+
+.bannner{
+    width:100%;
+    margin-top: 70px;
+}
+
+.bannner h2{
+    margin-left: 30px;
+}
+    .schedule {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin:20px 10px 20px 10px;
+    }
+
+    .match-card {
+      width:100%;
+      max-width:500px;
+      height:200px;
+      margin:5px auto;
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .match-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .time {
+      font-size: 14px;
+      font-weight: bold;
+      color: #ccc;
+    }
+
+    .league {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .teams {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 12px 0;
+    }
+
+    .team {
+      text-align: center;
+      width: 40%;
+    }
+
+    .team img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      margin-bottom: 6px;
+    }
+
+    .vs {
+      font-weight: bold;
+      color: #ddd;
+    }
+
+    .match-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    .commentator {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .commentator img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+
+    .statusLive {
+      background: #333;
+      color: #0f0;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+.status {
+      background: #333;
+      color: #db771a;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    a{
+        all:unset;
+        cursor: pointer;
+    }
