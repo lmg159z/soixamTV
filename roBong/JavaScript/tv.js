@@ -67,7 +67,7 @@ async function checkMatchStatus(idMatch) {
       case "pending":
         idVideo.poster = `${GL_domain}wordspage/image/poster/1.png`;
         idVideo.controls = false;
-        setTimeout(() => checkMatchStatus(idMatch), 30_000); // 30s thay vì 500ms
+        setTimeout(() => checkMatchStatus(idMatch), 20000); // 30s thay vì 500ms
         break;
 
       case "live":
