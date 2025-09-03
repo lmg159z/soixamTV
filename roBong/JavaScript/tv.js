@@ -60,17 +60,17 @@ async function checkMatchStatus(idMatch) {
       return;
     }
 
-    const status = api.result.match.status_text;
+    const status = api.result.match.live_state;
     console.log("Trạng thái:", status);
 
     switch (status) {
-      case "pending":
+      case 1:
         idVideo.poster = `${GL_domain}wordspage/image/poster/1.png`;
         idVideo.controls = false;
         setTimeout(() => checkMatchStatus(idMatch), 2000); // 30s thay vì 500ms
         break;
 
-      case "live":
+      case 2:
         dataStreams = api.result.room?.servers || [];
         if (!dataStreams.length) {
           console.warn("Không có streams khả dụng.");
@@ -89,7 +89,7 @@ async function checkMatchStatus(idMatch) {
         streams(0);
         break;
 
-      case "end":
+      case 3:
         idVideo.poster = `${GL_domain}wordspage/image/poster/2.png`;
         idVideo.controls = false;
         break;

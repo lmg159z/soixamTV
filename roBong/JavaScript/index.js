@@ -40,11 +40,13 @@ function handle_html(data,title){
 
             // nếu có tên BLV thì lấy, còn không thì text fallback
             const name = commentator?.name || "Chưa có BLV";
-             if (i.status_text === "live"){
+             if (i.live_state === 2){
               var mss = "Trực Tiếp"
-             } else if (i.status_text === "pending"){
+             }
+             if (i.live_state === 1){
               var mss = "Chưa Đến Giờ"
-             } else if (i.status_text === "end"){
+             }
+             if (i.status_text === "end"){
               var mss = "Kết Thúc"
              }
             return `
@@ -70,7 +72,7 @@ function handle_html(data,title){
                       <img src="${avatar}" alt="">
                       <span>${name}</span>
                     </div>
-                    <div class="${i.status_text == "live" ? "statusLive" : "status"}">
+                    <div class="${i.live_state == 2 ? "statusLive" : "status"}">
                       ${mss}
                     </div>
                   </div>
