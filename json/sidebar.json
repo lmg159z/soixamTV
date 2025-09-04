@@ -30,6 +30,11 @@
     "url":"video"
   },
   {
+    "icon": "fa-solid fa-video",
+    "title":"THVLi",
+    "url":"THVL"
+  },
+  {
     "icon": "fa-solid fa-f",
     "title": "Thể thao FPT",
     "url": "events/fptplay"

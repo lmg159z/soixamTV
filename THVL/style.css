@@ -35,7 +35,8 @@
   transform: translateY(-50%);
   font-size: 18px;
   color: #888;
-  pointer-events: none;
+  cursor:  grab;
+  padding:10px
 }
 
 
