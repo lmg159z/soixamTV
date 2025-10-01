@@ -1,0 +1,127 @@
+a{
+  all:unset;
+  cursor:pointer;
+}
+
+#contents{
+  width: 100%;
+  height: auto;
+  margin-top:60px;
+  position: relative;
+}
+
+.group_VOD{
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.group_VOD h3 {
+  width:100%;
+  display:block;
+  margin: 0 0 5px 10px;
+}
+
+.VOD {
+  display: flex;              
+  flex-wrap: nowrap;          
+  overflow-x: auto;           
+  overflow-y: hidden;         
+  scroll-behavior: smooth;     
+  gap: 10px; 
+  margin-bottom: 30px;                  
+  
+  scrollbar-width: none;       
+}
+.VOD::-webkit-scrollbar {
+  display: none;               
+}
+
+.VOD_item {
+  flex: 0 0 auto; 
+  width:200px;
+  height: auto;
+  margin: 0 5px;
+  position: relative; 
+  font-size: 1.4rem;         
+}
+
+.VOD_item img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+}
+
+.status {
+  position: absolute;
+  top: 5%;
+  right:5%;
+  display: block;
+  width: 50px;
+  height: 20px;
+  line-height: 20px; /* bằng height để căn giữa dọc */
+  font-size: 10px;
+  background-color: rgba(12, 186, 90, 0.75);
+  background-color: rgba(124, 19, 223, 0.75);
+  border-radius: 5px;
+  text-align: center; /* căn giữa ngang */
+}
+
+.live{
+  background-color: rgba(12, 186, 90, 0.75);
+}
+
+.UnLive{
+  background-color: rgba(124, 19, 223, 0.75);
+  pointer-events: none;
+}
+
+
+
+
+
+.VOD_item h6{
+  width: 100%;
+  align-content: justify;
+  margin: 0 2px;
+}
+
+
+
+
+
+.custom-loader {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  color: fff;
+  background:
+    radial-gradient(farthest-side,currentColor 90%,#0000) left  /10px 10px,
+    radial-gradient(farthest-side,currentColor 90%,#0000) center/10px 10px,
+    radial-gradient(farthest-side,currentColor 90%,#0000) right /10px 10px,
+    linear-gradient(currentColor 0 0) center/100% 4px; 
+  background-repeat: no-repeat;
+  position: relative;
+  animation: s6 2s infinite linear;
+}
+.custom-loader:before,
+.custom-loader:after {
+  content: "";
+  position: absolute;
+  inset:0;
+  background:inherit;
+  animation:inherit;
+  --s:calc(50% - 5px);
+  animation-direction: reverse;
+}
+.custom-loader:after {
+  --s:calc(5px - 50%);
+}
+
+@keyframes s6 {
+  0%   {transform: translate(var(--s,0)) rotate(0)}
+  100% {transform: translate(var(--s,0)) rotate(1turn)}
+}

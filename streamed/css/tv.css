@@ -1,0 +1,76 @@
+
+.player-container {
+    width: 90%;
+    max-width: 900px;
+    margin-top: 20px;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    margin: 70px auto 0 auto;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+}
+
+/* Thanh chọn độ phân giải */
+.resolution-bar {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 12px;
+    background: #111;
+    scrollbar-width: none;    /* ẩn scrollbar Firefox */
+}
+
+.resolution-bar::-webkit-scrollbar {
+    display: none;            /* ẩn scrollbar Chrome/Safari */
+}
+
+.res-btn {
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #444;
+    background: #1e1e1e;
+    color: #ccc;
+    flex-shrink: 0;           /* không co lại */
+    transition: 0.2s;
+}
+
+.res-btn:hover {
+    background: #2a2a2a;
+    color: #fff;
+}
+
+.res-btn.active {
+    background: #d9ff00;
+    color: #000;
+    border-color: #d9ff00;
+}
+
+
+.bannner{
+     width: 90%;
+    max-width: 900px;
+    margin: 20px auto 40px auto;
+
+}
+
+
+#contents{
+        background-color: #0a192f;
+}

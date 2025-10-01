@@ -25,6 +25,11 @@
     "url": "hoiQuanTV"
   },
   {
+    "icon": "fa-solid fa-medal",
+    "title": "Streamed có ADS",
+    "url": "streamed"
+  },
+  {
     "icon": "fa-solid fa-video",
     "title":"Video",
     "url":"video"
